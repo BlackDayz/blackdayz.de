@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   srcDir: 'src',
   runtimeConfig: {
     public: {
@@ -15,12 +15,10 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Nuxt 3 Template',
+      title: 'BlackDayz - Developer',
     },
   },
-  modules: [
-    '@nuxtjs/i18n'
-  ],
+  modules: ['@nuxtjs/i18n', "@nuxt/image"],
   plugins: [
     '~/plugins/bootstrap.client.ts',
     '~/plugins/fontawesome.ts',

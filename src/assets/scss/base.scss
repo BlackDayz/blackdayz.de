@@ -2,7 +2,13 @@
 @import 'node_modules/bootstrap/scss/_variables';
 @import 'node_modules/bootstrap/scss/_mixins';
 
-@import 'variables';
-@import 'main';
+@import 'variables.scss';
+@import 'overrides.scss';
+
+@import 'homepage/homepage.scss';
+@import 'contribution/contribution.scss';
+@import 'dc_profile/dc_profile.scss';
+@import 'projects/project.scss';
+@import 'work/work.scss';
 
 @import 'node_modules/bootstrap/scss/bootstrap';
