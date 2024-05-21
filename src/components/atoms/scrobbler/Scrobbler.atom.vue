@@ -7,12 +7,12 @@
 </template>
 
 <script>
+import { captureException } from '@sentry/browser';
+
 export default {
     name: 'ScrobblerComponent',
     data() {
         return {
-            apiKey: process.env.VUE_APP_LASTFM_API_KEY,
-            username: process.env.VUE_APP_LASTFM_USERNAME,
             lastScrobbledSong: null,
             text: {
                 lastScrobbledSong: 'Last listened song',
@@ -25,13 +25,17 @@ export default {
     methods: {
         getLastScrobbler() {
             fetch(
-                `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${this.username}&api_key=${this.apiKey}&format=json`,
+                `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${this.$config.public.lastFMUsername}&api_key=${this.$config.public.lastFMApiKey}&format=json`,
             )
                 .then((response) => response.json())
                 .then((data) => {
-                    this.lastScrobbledSong = data.recenttracks.track[0].name;
+                    const track = data.recenttracks.track[0];
+                    this.lastScrobbledSong = track.name;
                 })
-                .catch((error) => console.error(error));
+                .catch((error) => {
+                    captureException(error);
+                    console.error(error);
+                });
         },
     },
 };

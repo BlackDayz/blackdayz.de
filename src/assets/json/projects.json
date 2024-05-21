@@ -1,4 +1,23 @@
 {
+    "mostscuffed": {
+        "name": "Most Scuffed - Gameshow",
+        "description": "... hinter dem Bot war eigentlich nur das Testen der Discord API. Daraus enstand schnell ein Feature nach dem anderen. Jetzt ist der Bot ein vollfunktionsfähiger Bot mit vielen Features, wie z.B. Musik, Moderation, Fun, Games, usw.",
+        "tecstack": ["nuxt", "typescript"],
+        "img": "most-scuffed/mostscuffedLOGO.png",
+        "links": [
+            {
+                "icon": "https://img.icons8.com/color/48/youtube-play.png",
+                "link": "https://www.youtube.com/watch?v=hWfrP8qfVEY",
+                "name": "YouTube Video"
+            },
+            {
+                "icon": "https://img.icons8.com/color/48/twitch--v2.png",
+                "link": "https://www.twitch.tv/Rumathra",
+                "name": "Rumathra Twitch"
+            }
+        ],
+        "titlepage": true
+    },
     "mittelbot": {
         "name": "Mittelbot - Discord Bot",
         "description": "... hinter dem Bot war eigentlich nur das Testen der Discord API. Daraus enstand schnell ein Feature nach dem anderen. Jetzt ist der Bot ein vollfunktionsfähiger Bot mit vielen Features, wie z.B. Musik, Moderation, Fun, Games, usw.",

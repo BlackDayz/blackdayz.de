@@ -1,8 +1,10 @@
 import * as Sentry from '@sentry/node';
-import { ProfilingIntegration } from '@sentry/profiling-node';
+import { nodeProfilingIntegration } from '@sentry/profiling-node';
 
 export default defineNitroPlugin((nitroApp) => {
-    const { sentryDsn } = useRuntimeConfig();
+    const {
+        public: { sentryDsn },
+    } = useRuntimeConfig();
 
     if (!sentryDsn) {
         console.warn('Sentry DSN not set, skipping Sentry initialization');
@@ -10,14 +12,15 @@ export default defineNitroPlugin((nitroApp) => {
     }
 
     Sentry.init({
-        dsn: sentryDsn,
+        dsn: sentryDsn as string,
         environment: process.env.NODE_ENV,
-        integrations: [new ProfilingIntegration()],
+        integrations: [nodeProfilingIntegration()],
         tracesSampleRate: 0.25,
         profilesSampleRate: 0.25,
     });
 
     nitroApp.hooks.hook('error', (error) => {
+        console.error('Error caught by Sentry:', error);
         Sentry.captureException(error);
     });
     nitroApp.hooks.hook('request', (event) => {

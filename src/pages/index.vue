@@ -2,7 +2,7 @@
     <header class="top_page width-100 d-grid justify-content-center align-items-end">
         <div class="head_text text-center mb-5 text-white">
             <h1 class="fw-bold display-1">{{ $t('company') }}</h1>
-            <div class="head_text_big d-flex justify-content-between ms-2">
+            <div class="head_text_big d-flex justify-content-between">
                 <span class="h2 head_text_change m-0">{{ defaultTitle }}</span>
                 <span class="h2 head_text_second_dev m-0">{{ $t('developer') }}</span>
             </div>
@@ -29,6 +29,10 @@
             <div class="col-12 col-lg-6 d-flex justify-content-center">
                 <DcProfileComponent />
             </div>
+        </div>
+
+        <div>
+            <WorkComponent />
         </div>
 
         <!-- <mybots />

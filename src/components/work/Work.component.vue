@@ -1,10 +1,13 @@
 <template>
     <div class="references user-select-none">
         <header class="text-center">
-            <h2 class="fw-bold">{{ text.title }}</h2>
-
+            <h2 class="fw-bold">{{ $t('work.title') }}</h2>
             <div class="ref_gif_top display-flex justify-content-center py-5">
-                <img id="dev_funny_gif" :src="require('@/assets/gif/developer_funny.gif')" />
+                <NuxtImg
+                    src="/gif/developer_funny.gif"
+                    class="w-100"
+                    alt="Developer Typing on a old Apple MAC"
+                />
             </div>
         </header>
         <main class="row">
@@ -14,9 +17,9 @@
                 :key="index"
                 class="work col-12 col-md-6 m-0 p-0"
             >
-                <router-link :to="'/projects?work=' + index">
-                    <img
-                        :src="require('@/assets/img/projects/' + project.img)"
+                <router-link :to="'/projects/' + index">
+                    <NuxtImg
+                        :src="'/img/projects/' + project.img"
                         width="100%"
                         class="w-100 h-100 object-fit-cover object-position-center opacity-50 z-n1"
                     />
@@ -30,27 +33,21 @@
 
         <div class="work_show_more text-center my-5">
             <router-link to="/overview" class="p-3 fw-bold rounded-1">{{
-                text.showMore
+                $t('work.showMore')
             }}</router-link>
         </div>
     </div>
 </template>
 
 <script>
-import projects from '@/assets/json/projects/projects.json';
-import ProjectTechAtom from '@/atoms/projectTech.atom.vue';
+import projects from '~/assets/json/projects.json';
 
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
     name: 'Slider',
-    components: { ProjectTechAtom },
     data() {
         return {
             projects,
-            text: {
-                title: 'My work',
-                showMore: 'Show more',
-            },
         };
     },
 };

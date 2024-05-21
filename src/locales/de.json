@@ -1,5 +1,23 @@
 {
     "company": "BlackDayz",
     "developer": "Developer",
-    "homepage.header.hint": "Grab some fresh news about me!"
+    "homepage.header.hint": "Grab some fresh news about me!",
+    "aboutme.aboutme.title": "👋 Who am i?",
+    "aboutme.aboutme": "Hey, my name is obviously Mittelblut9. I'm 21 years old and a <span class=\"text-success\">Junior</span> Web Developer living in Germany",
+    "aboutme.title.title": "🎖 My completed trainings",
+    "aboutme.title": "Official trained <span class=\"fw-bold\">technical design assistant</span>",
+    "aboutme.current.title": "📚 What I'm doing right now",
+    "aboutme.current": "At the moment I am completing my training as a <span class=\"fw-bold\">IT specialist for application development</span>",
+    "aboutme.imdoing.title": "🧳 My freetime",
+    "aboutme.imdoing": "🚴‍♂️ 🎮 💻 😴",
+    "dcProfile.username": "Mittelblut9",
+    "dcProfile.lastSong": "Listening to",
+    "dcProfile.aboutMe": "About Me",
+    "dcProfile.webDeveloper": "🧑‍💻<strong>Web Developer</strong>",
+    "dcProfile.mod": "🛡️<i><a href=\"https://www.yaeow.com/\" class=\"text-white\" target=\"_blank\" rel=\"nofollow\">yaeow</a>, <a href=\"https://biglink.to/chilledsad\" class=\"text-white\" target=\"_blank\" rel=\"nofollow\">chilledsad</a>, <a href=\"https://www.youtube.com/c/nostalgicmusic\" class=\"text-white\" target=\"_blank\" rel=\"nofollow\">nostalgic</a>, <a href=\"https://www.youtube.com/channel/UCz-rxehhsrMAyBEJdf4NG2w\" class=\"text-white\" target=\"_blank\" rel=\"nofollow\">thegoodvibe</a>, <a href=\"https://www.funk.net/\" class=\"text-white\" target=\"_blank\" rel=\"nofollow\">funk</a></i>",
+    "dcProfile.roles": "Roles (Skills)",
+    "dcProfile.note": "Note",
+    "dcProfile.noteInput": "Write a note...",
+    "work.title": "👨‍💻 My projects",
+    "work.showMore": "Show more"
 }

@@ -1,6 +1,6 @@
 import * as Sentry from '@sentry/browser';
 
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin((nuxtApp) => {
     const {
         public: { sentryDsn },
     } = useRuntimeConfig();
@@ -21,10 +21,13 @@ export default defineNuxtPlugin(() => {
             }),
         ],
         tracesSampleRate: 0.25,
-        tracePropagationTargets: ['http://127.0.0.1:3000'],
         profilesSampleRate: 0.5,
 
         replaysSessionSampleRate: 0.5,
         replaysOnErrorSampleRate: 0.5,
+    });
+
+    nuxtApp.hooks.hook('app:error', (error) => {
+        Sentry.captureException(error);
     });
 });

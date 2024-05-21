@@ -1,8 +1,8 @@
 <template>
     <div class="card-container d-flex">
-        <div class="card d-block my-0 mx-auto w-75 rounded-2">
+        <div class="card d-block my-0 mx-auto rounded-2 bg-black border-5 border-white">
             <div class="card-header p-0">
-                <div class="banner-image w-100"></div>
+                <div class="banner-image w-100 bg-white"></div>
                 <div class="infos px-3 position-relative">
                     <div class="profil-logo position-absolute bg-black rounded-circle">
                         <NuxtImg src="/img/logo.png" class="rounded-circle" />
@@ -39,59 +39,29 @@
                             />
                         </div>
                     </div>
-                    <div class="username text-white mt-5 fw-bold fs-4">{{ text.username }}</div>
-                    <ScrobblerComponent />
-                    <hr class="border-1 border-white" />
+                    <div class="username text-white mt-5 fw-bold fs-4">
+                        {{ $t('dcProfile.username') }}
+                    </div>
+                    <div class="my-2">
+                        <ScrobblerAtom />
+                    </div>
+                    <hr class="border-1 border-white mt-1" />
                 </div>
             </div>
             <div class="card-content px-3">
                 <div class="about-me mb-2">
-                    <div class="category-title fw-bold text-uppercase mb-2">{{ text.aboutMe }}</div>
-                    <p class="text-white">
-                        🧑‍💻<strong>Web & Bot Dev</strong><br />
-                        🛠️ <strong>Moderator</strong> <br />
-                        🛡️
-                        <i
-                            ><a
-                                href="https://www.yaeow.com/"
-                                class="text-white"
-                                target="_blank"
-                                rel="nofollow"
-                                >yaeow</a
-                            >,
-                            <a
-                                href="https://biglink.to/chilledsad"
-                                class="text-white"
-                                target="_blank"
-                                rel="nofollow"
-                                >chilledsad</a
-                            >,
-                            <a
-                                href="https://www.youtube.com/c/nostalgicmusic"
-                                class="text-white"
-                                target="_blank"
-                                rel="nofollow"
-                                >nostalgic</a
-                            >,
-                            <a
-                                href="https://www.youtube.com/channel/UCz-rxehhsrMAyBEJdf4NG2w"
-                                class="text-white"
-                                target="_blank"
-                                rel="nofollow"
-                                >thegoodvibe</a
-                            >,
-                            <a
-                                href="https://www.funk.net/"
-                                class="text-white"
-                                target="_blank"
-                                rel="nofollow"
-                                >funk</a
-                            >
-                        </i>
-                    </p>
+                    <div class="category-title fw-bold text-uppercase mb-2">
+                        {{ $t('dcProfile.aboutMe') }}
+                    </div>
+                    <div>
+                        <p class="my-1 text-white" v-html="$t('dcProfile.webDeveloper')"></p>
+                        <p class="my-1 text-white" v-html="$t('dcProfile.mod')"></p>
+                    </div>
                 </div>
                 <div class="roles mb-3">
-                    <div class="category-title fw-bold text-uppercase mb-2">{{ text.roles }}</div>
+                    <div class="category-title fw-bold text-uppercase mb-2">
+                        {{ $t('dcProfile.roles') }}
+                    </div>
                     <div class="roles-list d-flex flex-wrap">
                         <div
                             v-for="skill in skills"
@@ -99,25 +69,20 @@
                             class="role rounded-1 text-white fw-light py-1 px-2 me-1 mt-1 d-flex align-items-center flex-row"
                         >
                             <div class="color rounded-circle me-1"></div>
-                            {{ skill }}
+                            <span class="fw-normal">{{ skill }}</span>
                         </div>
                     </div>
                 </div>
-                <div class="note mb-2">
-                    <div class="category-title fw-bold text-uppercase mb-2">{{ text.note }}</div>
+                <div class="note mb-3">
+                    <div class="category-title fw-bold text-uppercase mb-2">
+                        {{ $t('dcProfile.note') }}
+                    </div>
                     <textarea
                         id="dc_profile_note"
-                        placeholder="Click for add a note"
+                        :placeholder="$t('dcProfile.noteInput')"
                         class="border-0 w-100 text-white rounded-2 p-2"
                     ></textarea>
                 </div>
-            </div>
-            <div class="card-footer p-3 pt-0">
-                <input
-                    type="text"
-                    placeholder="Send a message to @Mittelblut9"
-                    class="border-0 w-100 rounded-1 text-white"
-                />
             </div>
         </div>
     </div>
@@ -125,20 +90,15 @@
 
 <script>
 export default {
-    name: 'DcProfile',
+    name: 'DcProfileComponent',
     data() {
         return {
-            text: {
-                username: 'Mittelblut9',
-                aboutMe: 'About Me',
-                roles: 'Roles (Skills)',
-                note: 'Note',
-            },
             skills: [
-                'CSS3',
-                'JavaScript',
+                'Nuxt.js',
                 'Node.js',
                 'Vue.js',
+                'JavaScript',
+                'Typescript',
                 'PHP',
                 'Yii2',
                 'Shopware',
@@ -146,9 +106,8 @@ export default {
                 'Discord.js',
                 'Docker',
                 'Sequelize',
-                'Nuxt.js',
-                'Typescript',
                 'Bootstrap',
+                'CSS3',
             ],
         };
     },

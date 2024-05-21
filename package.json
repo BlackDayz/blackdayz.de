@@ -4,7 +4,7 @@
   "type": "module",
   "version": "1.0.0",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && npm run sentry:sourcemaps",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -18,7 +18,8 @@
     "code:lint": "npm run code:eslint && npm run scss:lint",
     "code:format": "npm run code:eslint -- --fix && npm run scss:lint -- --fix",
     "scss:lint": "stylelint src/assets/scss --config .tools/stylelint/stylelintrc.json",
-    "prepare": "husky"
+    "prepare": "husky",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org blackdayz --project webseite ./.output && sentry-cli sourcemaps upload --org blackdayz --project webseite ./.output"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
@@ -27,6 +28,7 @@
     "@nuxt/image": "^1.7.0",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^8.3.1",
+    "@sentry/vite-plugin": "^2.16.1",
     "@types/aos": "^3.0.7",
     "@typescript-eslint/eslint-plugin": "^7.3.1",
     "@typescript-eslint/parser": "^7.4.0",
@@ -60,6 +62,8 @@
     "@nuxt/typescript-runtime": "^3.0.2",
     "@pinia/nuxt": "^0.5.1",
     "@sentry/browser": "^7.107.0",
+    "@sentry/cli": "^2.31.2",
+    "@sentry/esbuild-plugin": "^2.16.1",
     "@sentry/node": "^7.107.0",
     "@sentry/profiling-node": "^7.109.0",
     "aos": "^2.3.4",
