@@ -10,5 +10,12 @@
     "first-section.case-two.title": "<span class=\"fs-2 fw-bold\">Case #2</span><br>Streaming Tools",
     "first-section.case-two.text": "Wir entwickeln Webseiten und Webanwendungen für Unternehmen und Privatpersonen.",
     "first-section.case-third.title": "<span class=\"fs-2 fw-bold\">Case #3</span><br>Gameshows",
-    "first-section.case-third.text": "Wir entwickeln Webseiten und Webanwendungen für Unternehmen und Privatpersonen."
+    "first-section.case-third.text": "Wir entwickeln Webseiten und Webanwendungen für Unternehmen und Privatpersonen.",
+    "second-section.title": "Arbeiten",
+    "second-section.clients.left.title": "<span class=\"fs-2 fw-bold\">Projekt #2</span><br>Rumathra",
+    "second-section.clients.left.text": "Individual Entwicklung für den deutschen Twitch Streamer Rumathra.",
+    "second-section.clients.center.title": "<span class=\"fs-2 fw-bold\">Client #1</span><br>Rumathra",
+    "second-section.clients.center.text": "Individual Entwicklung für den deutschen Twitch Streamer Rumathra.",
+    "second-section.clients.right.title": "<span class=\"fs-2 fw-bold\">Projekt #3</span><br>Rumathra",
+    "second-section.clients.right.text": "Individual Entwicklung für den deutschen Twitch Streamer Rumathra."
 }
