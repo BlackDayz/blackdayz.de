@@ -11,9 +11,11 @@
                     :src="'/img/projects/' + project.img"
                     width="100%"
                     class="w-100 h-100 object-fit-cover object-position-center opacity-50 z-n1"
-                />
+                >
             </router-link>
-            <h1 class="work_name fw-bold z-1 text-center z-1">{{ project.name }}</h1>
+            <h1 class="work_name fw-bold z-1 text-center z-1">
+                {{ project.name }}
+            </h1>
             <div class="work_name fw-bold z-1 text-center z-1 fs-1">
                 <ProjectTechAtom :techstack="project.tecstack" />
             </div>
@@ -32,7 +34,9 @@
                     class="w-100 h-100 object-fit-cover object-position-center opacity-50 z-n1"
                 />
             </router-link>
-            <h1 class="work_name fw-bold z-1 text-center z-1">{{ project.name }}</h1>
+            <h1 class="work_name fw-bold z-1 text-center z-1">
+                {{ project.name }}
+            </h1>
             <div class="work_name fw-bold z-1 text-center z-1 fs-1">
                 <ProjectTechAtom :techstack="project.tecstack" />
             </div>

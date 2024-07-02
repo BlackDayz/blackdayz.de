@@ -1,0 +1,151 @@
+.intro {
+    width: 900px;
+}
+
+.intro--banner {
+    height: 475px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: -15px;
+        right: 0;
+        height: 2px;
+        background-color: #282828;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        width: 30px;
+        height: 4px;
+        background-color: #0f33ff;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 900;
+    }
+
+    button {
+        position: relative;
+        padding: 5px 17px 5px 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+
+        .btn-background {
+            left: 23px;
+            background-color: #0f33ff;
+            transition: left .2s ease-in-out;
+        }
+
+        &:hover .btn-background {
+            left: 0;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        svg {
+            left: 5px;
+            width: 15px;
+            fill: #fff;
+        }
+    }
+
+    img {
+        bottom: 21px;
+        right: -12px;
+    }
+
+    @media (width <= 767px) {
+        height: 305px;
+
+        h1 {
+            font-size: 55px;
+        }
+
+        img {
+            width: 430px;
+        }
+    }
+
+    @media (width <= 900px) {
+        height: 380px;
+
+        h1 {
+            font-size: 55px;
+        }
+
+        img {
+            width: 430px;
+        }
+    }
+}
+
+.intro--options {
+    a {
+        max-width: 250px;
+        text-decoration: none;
+        color: #535353;
+        transition: color .2s ease-in-out;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    @media (width <= 767px) {
+        display: block;
+
+        a {
+            display: block;
+            max-width: 100%;
+            margin: 0 0 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (width <= 600px) {
+    .intro--banner {
+        height: 360px
+    }
+
+    .intro--banner h1 {
+        font-size: 55px
+    }
+
+    .intro--banner img {
+        display: none
+    }
+}
+
+@media (width <= 600px) and (height <= 750px) {
+    .intro--banner {
+        height: auto
+    }
+
+    .intro--banner::before,
+    .intro--banner::after {
+        display: none
+    }
+
+    .intro--banner h1 {
+        margin-top: 0
+    }
+
+    .intro--options {
+        display: none
+    }
+}
