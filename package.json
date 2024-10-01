@@ -24,7 +24,6 @@
     "@nuxtjs/i18n": "^8.5.1",
     "husky": "^9.1.5",
     "nuxt": "^3.12.3",
-    "nuxt-appwrite": "^1.1.0",
     "postcss": "^8.4.40",
     "postcss-loader": "^8.1.1",
     "sass-loader": "^14.2.1",
@@ -40,5 +39,8 @@
     "@sentry/nuxt": "^8.31.0",
     "pinia": "^2.2.0",
     "sass": "^1.77.8"
+  },
+  "overrides": {
+    "sharp": "^0.33.4"
   }
 }

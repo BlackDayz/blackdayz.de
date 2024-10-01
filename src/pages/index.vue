@@ -1,12 +1,24 @@
 <template>
-    <h1>{{ $t('hello.world') }}</h1>
+    <div>
+        <ULandingSection>
+            <ULandingHero
+                :title="$t('general.company')"
+                :description="$t('homepage.landing.top.description')"
+            >
+                <LandingpageTopComponent />
+                <div class="mt-64">
+                    <LandingpageTrustedByComponent />
+                </div>
+            </ULandingHero>
+        </ULandingSection>
+        <LandingpageWhatDoIDoComponent />
+        <LandingpageProjectsComponent />
+        <LandingpageCatEmoteComponent />
+    </div>
 </template>
 
 <script lang="ts">
 export default {
     name: 'IndexPage',
-    data() {
-        return {};
-    },
 };
 </script>

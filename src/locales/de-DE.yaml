@@ -1,5 +1,70 @@
-hello:
-    world: "Hello World"
+general:
+    company: "BlackDayz"
+
+homepage:
+    landing:
+        top:
+            description: "Full-Stack Webentwickler" 
+        trustedBy:
+            title: "Trusted by"
+
+        whatDoIDo:
+            headline: "Über meine Arbeit"
+            title: "Was mach ich eigentlich?"
+            description: "Bekomme einen Überblick darüber was ich so den ganze Tag mache."
+            items:
+                gameshows: 
+                    title: "Game Shows"
+                    description: "Du hast eine Idee für eine Game Show? Lass uns sie gemeinsam umsetzen!"
+                    icon: "i-mingcute-game-2-line"
+                webdev: 
+                    title: "Webentwicklung"
+                    description: "Ob Landingpages, One-Pager oder umfangreiche Webseiten."
+                    icon: "hugeicons:internet"
+                twitchdev: 
+                    title: "Streaming Tools"
+                    description: "Ich sorge dafür, dass dein Stream mit dem perfekten Tool das nächste Level erreicht."
+                    icon: "i-cib-twitch"
+                gaming:
+                    title: "Zocken"
+                    description: "Neben der Arbeit zocke ich auch gerne mal."
+                    icon: "i-mingcute-game-2-line"
+        projects:
+            title: "Meine Projekte"
+            headline: "Best picks"
+            btn:
+                label: "Alle Projekte"
+
+contact:
+    button: "Lass quatschen"
+
+projects:
+    link:
+        button: "Meine Projekte"
+    mostscuffed:
+        title: "Most Scuffed"
+        description: ""
+        img: "/rumathra/mostscuffed.png"
+    mostscuffedv2:
+        title: "Most Scuffed V2"
+        description: ""
+        img: "/rumathra/mostscuffedv2.png"
+    mittlay:
+        title: "Mittlay"
+        description: ""
+        img: "/mittlay/mittlay.png"
+    rumathrabingo:
+        title: "Rumathra Bingos"
+        description: ""
+        img: "/rumathra/rumathraBingo.png"
+    mittelbot:
+        title: "Mittelbot - Discord Bot"
+        description: ""
+        img: "/mittelbot/mittelbot.png"
+    derduemmstefliegt:
+        title: "Der Dümmste fliegt"
+        description: ""
+        img: "/derduemmstefliegt/derduemmstefliegt_waitroom.png"
 
 header:
     links:
@@ -11,7 +76,41 @@ header:
 footer: 
     copyright: "Copyright © {year}"
     links:
-        example:
-            label: "Example"
+        imprint:
+            label: "Impressum"
             icon: "i-heroicons-rocket-launch"
-            to: "/"
+        privacy:
+            label: "Datenschutz"
+            icon: "i-heroicons-rocket-launch"
+
+legal:
+    hint:
+        description: "Wir bitten darum, dass sämtliche Adressen und Daten vertraulich behandelt werden und nicht an Dritte weitergegeben werden."
+
+error:
+    base: "Ein Fehler ist aufgetreten"
+    hint: "Bitte versuchen Sie es später erneut"
+    back2home: "Zurück zur Startseite"
+    404: "{base} Die Seite konnte nicht gefunden werden"
+    403: "{base} Du hast keine Berechtigung, diese Seite zu sehen"
+    500: "{base} Ein interner Serverfehler ist aufgetreten"
+    401: "{base} Du hast keine Berechtigung, diese Seite zu sehen"
+    429: "{base} Zu viele Anfragen. Bitte versuche es später erneut"
+
+
+clients: 
+    rumathra:
+        name: "Rumathra"
+        description: "Twitch Streamer"
+        url: "https://twitch.tv/rumathra"
+        img: "/img/clients/rumathra.png"
+    hautnah:
+        name: "Hautnah"
+        description: "Medien Agentur"
+        url: "https://htnh.de"
+        img: "/img/clients/htnh.svg"
+    geilevideossos:
+        name: "Geilevideossos"
+        description: "Twitch Streamer"
+        url: "https://twitch.tv/geilevideossos"
+        img: "/img/clients/geilevideossos.png"

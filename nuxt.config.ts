@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-07-21',
+  ssr: false,
   devtools: { enabled: true },
   srcDir: 'src',
   runtimeConfig: {
@@ -21,13 +22,12 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
-      title: 'Nuxt 3 Template',
     },
   },
   extends: [
     '@nuxt/ui-pro'
   ],
-  modules: ['@nuxtjs/i18n', '@nuxt/ui', //'nuxt-appwrite'
+  modules: ['@nuxtjs/i18n', '@nuxt/ui',
   '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module'],
   plugins: [
     '~/plugins/sentry.ts',
@@ -57,9 +57,5 @@ export default defineNuxtConfig({
       escapeHtml: false,
       strictMessage: false
     }
-  },
-  appwrite: {
-    endpoint: process.env.APPWRITE_ENDPOINT,
-    project: process.env.APPWRITE_PROJECT_ID,
   },
 })
