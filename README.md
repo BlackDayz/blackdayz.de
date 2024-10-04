@@ -1,1 +1,3 @@
-# Nuxt 3 Template
+# Blackdayz Official Website
+
+<https://blackdayz.de>

@@ -58,4 +58,12 @@ export default defineNuxtConfig({
       strictMessage: false
     }
   },
+  build: {
+    transpile: ['sharp']
+  },
+  site: {
+    url: 'https://www.blackdayz.de',
+    name: 'BlackDayz - Full-Stack Entwickler',
+    description: 'Webseiten, Stream Tools und Gameshows.',
+  },
 })
