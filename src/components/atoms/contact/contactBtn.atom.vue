@@ -2,6 +2,8 @@
     <div>
         <UButton
             color="cyan"
+            variant="outline"
+            class="shadow-md"
             :to="Routes.Contact"
         >
             <NuxtImg

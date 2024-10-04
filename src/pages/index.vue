@@ -12,7 +12,7 @@
             </ULandingHero>
         </ULandingSection>
         <LandingpageWhatDoIDoComponent />
-        <LandingpageProjectsComponent />
+        <ProjectsComponent :limit="6" />
         <LandingpageCatEmoteComponent />
     </div>
 </template>

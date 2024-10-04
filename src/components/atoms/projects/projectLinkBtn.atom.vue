@@ -1,8 +1,9 @@
 <template>
     <div>
         <UButton
-            color="cyan"
-            variant="outline"
+            color="primary"
+            variant="solid"
+            class="shadow-md"
             :to="Routes.Projects"
         >
             <NuxtImg

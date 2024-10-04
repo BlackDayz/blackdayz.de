@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-center gap-7">
-        <ContactBtnAtom />
         <ProjectLinkBtnAtom />
+        <ContactBtnAtom />
     </div>
 </template>
 

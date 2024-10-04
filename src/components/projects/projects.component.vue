@@ -1,12 +1,14 @@
 <template>
     <ULandingSection
         :title="$t('homepage.landing.projects.title')"
-        :headline="$t('homepage.landing.projects.headline')"
+        :headline="limit === 0 ? '' : $t('homepage.landing.projects.headline')"
     >
         <UPageGrid>
             <UPageCard
-                v-for="(module, index) in modules"
+                v-for="(module, index) in modules.slice(0, limit === 0 ? modules.length : limit)"
                 :key="index"
+                :prefetch="true"
+                :prefetch-on="{ interaction: true }"
                 v-bind="module"
                 :to="module.to"
             >
@@ -18,10 +20,16 @@
                 </template>
                 <template #description>
                     <span class="line-clamp-2">{{ module.description }}</span>
+                    <div class="mt-3">
+                        <ProjectTechComponent :project="module" />
+                    </div>
                 </template>
             </UPageCard>
         </UPageGrid>
-        <div class="grid justify-center">
+        <div
+            v-if="limit > 0"
+            class="grid justify-center"
+        >
             <UButton
                 :to="Routes.Projects"
                 class="mt-8 w-28"
@@ -34,7 +42,13 @@
 
 <script lang="ts">
 export default {
-  name: 'LandingpageProjectsComponent',
+  name: 'ProjectsComponent',
+  props: {
+    limit: {
+      type: Number,
+      default: 0,
+    },
+  },
   data() {
     return {
       Routes,
@@ -49,9 +63,26 @@ export default {
         'rumathrabingo', 
         'mittelbot',
         'derduemmstefliegt',
+        'studiodevoyage',
+        'scarexportfolio',
+        'phenixgamesteam',
+        'phenixgameshomepage',
+        'phenixgamesgtaroleplay',
+        'cookieclicker',
+        'nobadvibesshop',
+        'dazshop',
+        'nounfollowtwitch',
+        'voteplusshopwareplugin',
+        'changerjslibrary',
+        'subscriptor',
+        'lacampanadesign',
+        'easylogindesign',
+        'mediengestaltungredesign',
+        'calculator',
       ];
 
       return keys.map((key) => ({
+        projectKey: key,
         title: this.$t(`projects.${key}.title`),
         description: this.$t(`projects.${key}.description`),
         img: '/img/projects' + this.$t(`projects.${key}.img`),
