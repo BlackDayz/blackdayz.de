@@ -1,14 +1,11 @@
 <template>
-    <div class="w-1/2 mx-auto py-14">
-        <div class="mb-10">
-            <LegalHintAtom />
-        </div>
+    <div>
         <h1 class="text-5xl text-center mb-10 font-bold">
             Impressum
         </h1>
         <p>
+            BlackDayz<br>
             Benedikt Sauer<br>
-            Web Entwickler<br>
             Obertorstra&szlig;e 12<br>
             53340 Meckenheim
         </p>
@@ -45,6 +42,6 @@
 
 <script lang="ts">
 export default {
-    name: 'ImpressumPage',
+  name: 'LegalImprintDeComponent',
 };
 </script>

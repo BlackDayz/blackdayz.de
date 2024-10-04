@@ -28,11 +28,53 @@
                     class="w-screen"
                 />
             </div>
+
+            <div class="flex justify-center">
+                <div
+                    v-for="link in project.links"
+                    :key="link.key"
+                >
+                    <NuxtLink
+                        :to="link.link"
+                        :external="true"
+                        target="_blank"
+                        class="text-cyan-500 hover:text-cyan-700 flex items-center mx-3"
+                    >
+                        <UIcon
+                            v-if="link.type === 'youtube'"
+                            name="i-mdi-youtube"
+                            class="mr-2"
+                        />
+                        <UIcon
+                            v-if="link.type === 'github'"
+                            name="i-mdi-github"
+                            class="mr-2"
+                        />
+                        <UIcon
+                            v-if="link.type === 'website'"
+                            name="i-mdi-web"
+                            class="mr-2"
+                        />
+                        <span v-text="link.label" />
+                        <UIcon
+                            name="i-ic-outline-launch"
+                            class="ml-2"
+                        />
+                    </NuxtLink>
+                </div>
+            </div>
         </ULandingSection>
     </div>
 </template>
 
 <script lang="ts">
+interface ProjectLink {
+  key: string;
+  label: string;
+  link: string;
+  type: 'youtube' | 'github' | 'website';
+}
+
 export default {
   name: 'ProjectsDetailPage',
   data() {
@@ -43,6 +85,7 @@ export default {
         description: '',
         img: '',
         moreImgs: [] as string[],
+        links: [] as ProjectLink[],
       },
     };
   },
@@ -55,7 +98,7 @@ export default {
       });
     }
     useHead({
-      title: projectStrings.title.body.static, 
+      title: `${projectStrings.title.body.static} | ${this.$t('general.company')}`,
       meta: [
         {
           hid: 'description',
@@ -66,9 +109,23 @@ export default {
     });
 
     const detailImgs = Object.keys(projectStrings.detail || {});
+    const newImgs: string[] = [];
     if(detailImgs.length > 0) {
       detailImgs.forEach((key) => {
-        this.project.moreImgs.push('/img/projects' + projectStrings.detail[key].body.static);
+        newImgs.push('/img/projects' + projectStrings.detail[key].body.static);
+      });
+    }
+
+    const links = Object.keys(projectStrings.links || {});
+    const newLinks: ProjectLink[] = [];
+    if(links.length > 0) {
+      links.forEach((key) => {
+        newLinks.push({
+          key,
+          type: projectStrings.links[key].type.body.static,
+          label: projectStrings.links[key].label.body.static,
+          link: projectStrings.links[key].url.body.static
+        });
       });
     }
 
@@ -76,7 +133,8 @@ export default {
       title: projectStrings.title.body.static,
       description: projectStrings.description.body.static,
       img: '/img/projects' + projectStrings.img.body.static,
-      moreImgs: detailImgs || [],
+      moreImgs: newImgs || [],
+      links: newLinks || [],
     };
   }
 };

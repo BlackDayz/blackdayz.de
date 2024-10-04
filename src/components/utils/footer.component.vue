@@ -49,12 +49,12 @@ export default {
         {
           label: this.$t('footer.links.imprint.label'),
           icon: this.$t('footer.links.imprint.icon'),
-          to: '/' + locale + this.legalLinks[locale].imprint,
+          to: this.legalLinks[locale].imprint,
         },
         {
           label: this.$t('footer.links.privacy.label'),
           icon: this.$t('footer.links.privacy.icon'),
-          to: '/' + locale + this.legalLinks[locale].privacy,
+          to: this.legalLinks[locale].privacy,
         },
       ];
     },

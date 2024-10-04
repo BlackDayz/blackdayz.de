@@ -20,5 +20,17 @@
 <script lang="ts">
 export default {
     name: 'IndexPage',
+    mounted() {
+        useHead({
+            title: `${this.$t('general.company')} ${this.$t('homepage.meta.title')}`,
+            meta: [
+                {
+                    hid: 'description',
+                    name: 'description',
+                    content: this.$t('homepage.meta.description'),
+                },
+            ],
+        });
+    },
 };
 </script>
