@@ -351,8 +351,6 @@ header:
 
 footer: 
     copyright: "Copyright © {year}"
-    langSwitcher:
-        text: "Sprache zu {lang} wechseln"
     links:
         imprint:
             label: "Impressum"

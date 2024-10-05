@@ -48,14 +48,23 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'de-DE',
-        language: 'de-DE',
         name: 'Deutsch',
         file: 'de-DE.yaml'
       },
+      {
+        code: 'en-US',
+        name: 'English',
+        file: 'en-US.yaml'
+      }
     ],
     compilation: {
       escapeHtml: false,
       strictMessage: false
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
     }
   },
   build: {

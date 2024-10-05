@@ -9,6 +9,14 @@
         </template>
 
         <template #right>
+            <NuxtLink
+                v-for="locale in availableLocales"
+                :key="locale.code"
+                class="cursor-pointer"
+                @click.prevent.stop="updateLocale(locale.code)"
+            >
+              {{ $t('footer.langSwitcher.text', { lang: locale.name }) }}
+            </NuxtLink>
             <UColorModeButton />
             <UButton
                 icon="i-simple-icons-github"
@@ -36,8 +44,13 @@ export default {
           imprint: Routes.ImprintEN,
           privacy: Routes.PrivacyEN,
         },
-      } as Record<'de-DE' | 'en-US', { imprint: Routes; privacy: Routes }>
+      } as Record<'de-DE' | 'en-US', { imprint: Routes; privacy: Routes }>,
     };
+  },
+  computed: {
+    availableLocales() {
+      return useI18n().locales.value.filter(i => i.code !== useI18n().locale.value);
+    }
   },
   mounted() {
     this.getLocaleLink();
@@ -57,6 +70,10 @@ export default {
           to: this.legalLinks[locale].privacy,
         },
       ];
+    },
+    updateLocale(locale: string) {
+      this.$i18n.setLocale(locale);
+      useRouter().go(0);
     },
   }
 };
