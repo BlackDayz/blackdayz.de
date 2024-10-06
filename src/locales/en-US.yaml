@@ -3,56 +3,65 @@ general:
 
 homepage:
     meta:
-        title: "- Full-Stack Webentwickler"
-        description: "Webseiten, Stream Tools und Gameshows."
+        title: "- Full-Stack Webdeveloper"
+        description: "Websites, stream tools and game shows."
     landing:
         top:
-            description: "Full-Stack Webentwickler" 
+            description: "Full-Stack Webdeveloper" 
         trustedBy:
             title: "Trusted by"
 
         whatDoIDo:
-            headline: "Über meine Arbeit"
-            title: "Was mach ich eigentlich?"
-            description: "Bekomme einen Überblick darüber was ich so den ganze Tag mache."
+            headline: "About my work"
+            title: "What am I actually doing?"
+            description: "Get an overview of what I do throughout the day."
             items:
                 gameshows: 
                     title: "Game Shows"
-                    description: "Du hast eine Idee für eine Game Show? Lass uns sie gemeinsam umsetzen!"
+                    description: "Do you have an idea for a game show? Let's realise it together!"
                     icon: "i-mingcute-game-2-line"
                 webdev: 
-                    title: "Webentwicklung"
-                    description: "Ob Landingpages, One-Pager oder umfangreiche Webseiten."
+                    title: "Webdevelopment"
+                    description: "Whether landing pages, one-pagers or extensive websites."
                     icon: "hugeicons:internet"
                 twitchdev: 
                     title: "Streaming Tools"
-                    description: "Ich sorge dafür, dass dein Stream mit dem perfekten Tool das nächste Level erreicht."
+                    description: "I make sure that your stream reaches the next level with the perfect tool."
                     icon: "i-cib-twitch"
                 gaming:
-                    title: "Zocken"
-                    description: "Neben der Arbeit zocke ich auch gerne mal."
+                    title: "Gaming"
+                    description: "Besides work, I also like to play games."
                     icon: "i-mingcute-game-2-line"
         projects:
-            title: "Meine Projekte"
+            title: "My projects"
             headline: "Best picks"
             btn:
-                label: "Alle Projekte"
+                label: "All projects"
 
 contact:
-    button: "Lass quatschen"
+    button: "Let's chat"
+    page:
+        meta:
+            title: "Contact"
+            description: "Get in touch with me"
+        headline: "Do you have a project idea?"
+        subtitle: "Get in touch with me"
+        buttons:
+            discord: "Discord"
+            email: "E-Mail"
 
 projects:
     meta:
-        title: "Meine Projekte"
-        description: "Hier findest du eine Übersicht über alle meine Projekte."
+        title: "My projects"
+        description: "Here you can find an overview of all my projects."
     link:
-        button: "Meine Projekte"
+        button: "My projects"
     detail:
         backbtn:
-            label: "Zurück zu allen Projekten"
+            label: "Back to all projects"
     mostscuffed:
         title: "Most Scuffed"
-        description: "In dieser Gameshow geht es darum, wer am wenigsten Wissen hat – oder auch: 'Der Dümmste fliegt'. Die Spieler treten gegeneinander an und müssen verschiedene Fragen beantworten. Am Ende jeder Runde scheidet der Spieler mit den meisten Stimmen aus."
+        description: "This game show is about who has the least knowledge - or: 'Der Dümmste Fliegt'. The players compete against each other and have to answer various questions. At the end of each round, the player with the most votes is eliminated."
         img: "/rumathra/mostscuffed.jpg"
         tech: 
             vue: true
@@ -61,11 +70,11 @@ projects:
         links:
             youtube:
                 type: "youtube"
-                label: "YouTube Video"
+                label: "YouTube video"
                 url: "https://youtu.be/hWfrP8qfVEY?si=ZadMwM-w52bwhUGJ"
     mostscuffedv2:
         title: "Most Scuffed V2"
-        description: "In dieser Gameshow traten zwei Teams mit jeweils vier Mitgliedern gegeneinander an. Ihre Aufgabe war es, das fehlende Wort in einem Satz zu erraten, das zuvor aus der Community gesammelt wurde. Das Team, das am Ende die meisten Punkte erzielte, gewann."
+        description: "In this game show, two teams with four members each competed against each other. Their task was to guess the missing word in a sentence that had previously been collected from the community. The team that scored the most points at the end won."
         img: "/rumathra/mostscuffedv2.jpg"
         tech: 
             nuxt: true
@@ -74,11 +83,11 @@ projects:
         links:
             youtube:
                 type: "youtube"
-                label: "YouTube Video"
+                label: "YouTube video"
                 url: "https://youtu.be/OtQi25_K2ac?si=dwIbyRjsiXCnN59y"
     mittlay:
         title: "Mittlay"
-        description: "Eine zentrale Plattform, mit der ich Projekte für Streamer verwalten kann. Dazu gehören aktuell: Stream-Overlays, Bingos und individuell angefertigte Elemente. Der Fokus liegt darauf, schnell und einfach neue Streamer hinzuzufügen, externe Editoren einzuladen und neue Projekte zu erstellen."
+        description: "A central platform with which I can manage projects for streamers. This currently includes: stream overlays, bingos and customised elements. The focus is on adding new streamers quickly and easily, inviting external editors and creating new projects."
         img: "/mittlay/mittlay.png"
         detail:
             img1: "/mittlay/settings_preview.png"
@@ -89,7 +98,7 @@ projects:
             appwrite: true
     rumathrabingo:
         title: "Rumathra Bingos"
-        description: "Um zu vermeiden, dass Rumathra seine Bingos in Paint erstellen muss, habe ich ein Tool entwickelt, mit dem er schnell und einfach Bingos gestalten kann."
+        description: "To avoid Rumathra having to create his bingos in Paint, I have developed a tool with which he can design bingos quickly and easily."
         img: "/rumathra/rumathraBingo.png"
         tech:
             vue: true
@@ -116,7 +125,7 @@ projects:
                 url: "https://github.com/Mittelblut9/ruamthra-amar-bingo"
     mittelbot:
         title: "Mittelbot - Discord Bot"
-        description: "Ursprünglich wollte ich nur die Discord-API testen. Doch daraus entstand schnell ein Feature nach dem anderen. Jetzt ist der Bot voll funktionsfähig und bietet zahlreiche Funktionen wie Musik, Moderation, Spaß-Features, Spiele und vieles mehr."
+        description: "Originally, I only wanted to test the Discord API. But it quickly evolved into one feature after another. Now the bot is fully functional and offers numerous functions such as music, moderation, fun features, games and much more."
         img: "/mittelbot/mittelbot.png"
         tech:
             node: true
@@ -136,14 +145,14 @@ projects:
             
     derduemmstefliegt:
         title: "Der Dümmste fliegt"
-        description: "Ein Spiel, das von vielen bekannten Streamern in ihren Streams gespielt wird. Nachdem ich die goofy Version von Rumathra gesehen habe, wollte ich das Spiel intuitiv und benutzerfreundlich nachbauen. Das hier ist das Ergebnis."
+        description: "A game that is played by many well-known streamers in their streams. After seeing the goofy version of Rumathra, I wanted to recreate the game in an intuitive and user-friendly way. This is the result."
         img: "/derduemmstefliegt/derduemmstefliegt_waitroom.png"
         tech:
             vue: true
             websocket: true
     phenixgamesteam:
-        title: "PhenixGames Teambereich"
-        description: "Ein Bereich für Teammitglieder des Projekts, in dem In-Game relevante Informationen eines Spielers oder Fahrzeugs bearbeitet werden können (z.B. einen Spieler bannen oder ein Fahrzeug löschen). Zudem lassen sich Forenbeiträge erstellen, Bewerbungen oder Anträge einsehen, annehmen oder ablehnen, webseitenbezogene Daten ändern und Logs einsehen. Die neue Herausforderung bestand darin, mit einem getrennten Frontend- und Backendsystem zu arbeiten. Zuvor konnte ich dies nur in meinem Praktikumsprojekt ausprobieren. Leider habe ich es nicht mehr geschafft, das Projekt vollständig aufzusetzen, daher habe ich ein Video von der Seite in der Entwicklungsumgebung erstellt."
+        title: "PhenixGames Teamarea"
+        description: "An area for team members of the project where in-game relevant information of a player or vehicle can be edited (e.g. ban a player or delete a vehicle). In addition, forum posts can be created, applications or requests can be viewed, accepted or rejected, website-related data can be changed and logs can be viewed. The new challenge was to work with a separate front-end and back-end system. Previously, I had only been able to try this out in my internship project. Unfortunately, I didn't manage to set up the project completely, so I created a video of the site in the development environment."
         img: "/phenixgames/teamarea/phenixgamesteam.png"
         tech:
             node: true
@@ -159,7 +168,7 @@ projects:
                 url: "https://github.com/PhenixGames/PhenixGames-Team-Backend"
     changerjslibrary:
         title: "Changer.js Library"
-        description: "Eine Mini-Bibliothek, mit der sich Änderungen an einem oder mehreren Input-Feldern direkt im Browser einfach weiterverwenden lassen."
+        description: "A mini-library with which changes to one or more input fields can be easily reused directly in the browser."
         img: "/changerjslibrary/changerjslibrary.png"
         tech:
             javascript: true
@@ -169,12 +178,12 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/Mittelblut9/ChangerJs"
     lacampanadesign:
-        title: "La Campana Design - Konzept"
-        description: "Ein Freund und ich hatten Lust, für ein lokales Restaurant eine neue Webseite zu erstellen. Wir sind zwar keine geborenen Designer, aber zwei Köpfe sind besser als einer. Also machten wir uns zuerst ans Design. Nach ein paar Stunden hatten wir eine feste Designidee (siehe PDF), die wir an das Restaurant schickten. Zunächst sah alles vielversprechend aus, doch nach einiger Zeit erhielten wir keine Antwort mehr. Im Frühjahr 2022 hatte das Restaurant schließlich eine neue Webseite – jedoch nicht von uns."
+        title: "La Campana Design - Concept"
+        description: "A friend and I wanted to create a new website for a local restaurant. We may not be born designers, but two heads are better than one. So we set to work on the design first. After a few hours, we had a solid design idea (see PDF) that we sent to the restaurant. At first everything looked promising, but after a while we received no response. In spring 2022, the restaurant finally had a new website - but not from us."
         img: "/lacampanadesign/lacampanadesign.png"
     cookieclicker:
         title: "Cookie Clicker"
-        description: "Das Spiel sollte meine JavaScript-Kenntnisse auffrischen. Die erste Version war auch meine erste große Erfahrung mit JavaScript. Ich begann mit der zweiten Version, weil der Code in der ersten sehr unübersichtlich wurde."
+        description: "The game was intended to refresh my JavaScript skills. The first version was also my first big experience with JavaScript. I started with the second version because the code in the first became very confusing."
         img: "/cookieclicker/cookieclicker.png"
         tech:
             html: true
@@ -198,8 +207,8 @@ projects:
                 label: "GitHub Version 2"
                 url: "https://github.com/Mittelblut9/Cookie-Clicker"
     easylogindesign:
-        title: "Einfaches Login Design"
-        description: "Ich habe schnell ein Login-Design erstellt. Nichts Besonderes, aber funktional."
+        title: "Easy Login Design"
+        description: "I quickly created a login design. Nothing special, but functional."
         img: "/easylogindesign/easylogindesign.png"
         tech:
             html: true
@@ -211,8 +220,8 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/Mittelblut9/Easy-Login-Design-V1"
     nobadvibesshop:
-        title: "NoBadVIBES Shop - Konzept"
-        description: "Ein Klassenkamerad wollte seine Bekleidungsmarke wie einen normalen Shop anbieten. Das klang damals einfach. Nach 73 Stunden Entwicklungszeit wurde jedoch nicht mehr weitergearbeitet. Es gab viele Design- und Codebugs, und die Daten- und Codesicherheit ließ ebenfalls zu wünschen übrig. Dennoch war es das erste Mal, dass ich einen Shop entwickelt habe, und ich musste mir alles selbst beibringen – genauso wie bei all meinen bisherigen Projekten."
+        title: "NoBadVIBES Shop - Concept"
+        description: "A classmate wanted to offer his clothing brand like a normal shop. It sounded simple at the time. However, after 73 hours of development, the project was discontinued. There were many design and code bugs, and the data and code security also left a lot to be desired. Nevertheless, it was the first time I had developed a shop and I had to teach myself everything - just like with all my previous projects."
         img: "/nobadvibesshop/nobadvibesshop.png"
         tech:
             html: true
@@ -225,8 +234,8 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/BlackDayz/nobadVIBES"
     dazshop:
-        title: "prodbyDAZ Shop - Konzept"
-        description: "In diesem selbst entwickelten Shop sollten mehrere Produzenten ihre Produkte anbieten können, mit PayPal als Zahlungsmethode. Das klang damals einfach. Doch nach etwa 68 Stunden Entwicklungszeit wurde es mir neben der Schule zu viel. Seitdem ruht das Projekt in seinem aktuellen Zustand. Es gibt viele Design- und Codebugs, und die Daten- und Codesicherheit ist nicht optimal. Zudem gibt es eine wenig individuelle Codestruktur, die den Umzug auf eine neue Umgebung erschwert. Dennoch war es das erste Mal, dass ich einen Shop entwickelt habe, und ich musste mir alles selbst beibringen, wie bei all meinen bisherigen Projekten. Mein Plan, um dieses Projekt aufzufrischen, ist es, es komplett im Backend mit dem PHP-Framework CodeIgniter laufen zu lassen."
+        title: "prodbyDAZ Shop - Concept"
+        description: "Several producers were to be able to offer their products in this self-developed shop, with PayPal as a payment method. That sounded simple at the time. However, after around 68 hours of development time, it became too much for me outside of school. Since then, the project has been dormant in its current state. There are many design and code bugs, and the data and code security is not optimal. In addition, the code structure is not very customised, which makes it difficult to move to a new environment. Nevertheless, it was the first time I had developed a shop and I had to teach myself everything, as with all my previous projects. My plan to refresh this project is to run it entirely in the backend with the PHP framework CodeIgniter."
         img: "/dazshop/dazshop.png"
         tech:
             html: true
@@ -239,12 +248,12 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/BlackDayz/prodbydaz-v1"
     mediengestaltungredesign:
-        title: "Mediengestaltung Redesign - Schulprojekt"
-        description: "Die Aufgabe in der Schule bestand darin, ein komplettes Redesign der Webseite https://www.visuelle-mediengestaltung.de durchzuführen. Nach ein paar Skizzen und Wireframes habe ich sofort mit der Entwicklung der Seite begonnen. Mit der Zeit wurde die alte Seite so mit JavaScript überladen, dass ich selbst den Überblick verlor. Aus diesem Grund entschied ich mich, alles von Grund auf neu zu beginnen und mehr auf die Code-Struktur und Organisation zu achten. In den Einstellungen verstecken sich einige Spielereien, wie zum Beispiel das Ein- und Ausschalten von Fehlermeldungen, JavaScript-Animationen, Cookie-Einstellungen und einen Dark Mode."
+        title: "Mediengestaltung Redesign - school project"
+        description: "The task at school was to carry out a complete redesign of the website https://www.visuelle-mediengestaltung.de. After a few sketches and wireframes, I immediately started developing the site. Over time, the old site became so overloaded with JavaScript that I lost track of it myself. For this reason, I decided to start everything from scratch and pay more attention to the code structure and organisation. There are a few gimmicks hidden in the settings, such as switching error messages on and off, JavaScript animations, cookie settings and a dark mode."
         img: "/mediengestaltungredesign/mediengestaltungredesign.png"
     calculator:
         title: "Calculator"
-        description: "Ein einfacher Taschenrechner – nichts Besonderes, aber funktional."
+        description: "A simple pocket calculator - nothing special, but functional."
         img: "/calculator/calculator.png"
         tech:
             html: true
@@ -261,7 +270,7 @@ projects:
                 url: "https://mittelblut9.github.io/Calculator-JavaScript/"
     nounfollowtwitch:
         title: "No unfollow Twitch - Browser Extension"
-        description: "Eine Browser-Erweiterung, die den 'Unfollow'-Button entfernt. Jeder kennt es: ein 'Missclick', und die 4+ Jahre lange Follow-Streak ist vorbei."
+        description: "A browser extension that removes the ‘Unfollow’ button. Everyone knows it: one ‘missclick’ and the 4+ year long follow streak is over."
         img: "/nounfollowtwitch/nounfollowtwitch.jpg"
         tech:
             javascript: true
@@ -276,7 +285,7 @@ projects:
                 url: "https://addons.mozilla.org/de/firefox/addon/no-unfollow-twitch/"
     voteplusshopwareplugin:
         title: "Vote+ Shopware 5 Plugin"
-        description: "Ein Shopware 5 Plugin, das ich in den ersten Wochen meiner Ausbildung entwickelt habe. Es ermöglicht Kunden, Produkte zu bewerten und diese Bewertungen einzusehen."
+        description: "A Shopware 5 plugin that I developed in the first few weeks of my training. It allows customers to rate products and view these ratings."
         img: "/voteplusshopwareplugin/voteplusshopwareplugin.png"
         tech:
             php: true
@@ -287,13 +296,13 @@ projects:
                 url: "https://github.com/Mittelblut9/VotePlus"
     studiodevoyage:
         title: "Studio de Voyage - Online Shop"
-        description: "Ein Online-Shop für die Modemarke 'Studio de Voyage', der mit Shopify erstellt wurde. Ich habe die technische Umsetzung übernommen, einschließlich der Anpassungen des Themes und der Einrichtung."
+        description: "An online shop for the fashion brand 'Studio de Voyage', which was created with Shopify. I took care of the technical implementation, including customising the theme and setting it up."
         img: "/studiodevoyage/studiodevoyage.png"
         tech:
             shopify: true
     subscriptor:
         title: "Subscriptor"
-        description: "Im Sommer 2021 hatte ich die Gelegenheit, ein Praktikum bei https://sascha-nos.com zu absolvieren, bei dem ich eine Webseite entwickeln sollte, auf der Benutzer ihre Abonnements hinzufügen und verwalten können. Außerdem implementierte ich ein Benachrichtigungssystem, das die Benutzer in Echtzeit über die neuesten Updates ihrer Abonnements informiert. Leider ist der Source-Code privat, und die Seite war zu diesem Zeitpunkt gelegentlich nicht erreichbar. Deshalb zeige ich hier einige Bilder der Webseite aus meinem Praktikumsbericht."
+        description: "In the summer of 2021, I had the opportunity to do an internship at https://sascha-nos.com, where I was asked to develop a website where users can add and manage their subscriptions. I also implemented a notification system that informs users in real time about the latest updates to their subscriptions. Unfortunately, the source code is private and the site was occasionally unavailable at the time. Therefore, I show some pictures of the website from my internship report here."
         img: "/subscriptor/subscriptor.png"
         tech:
             vue: true
@@ -302,7 +311,7 @@ projects:
             php: true
     phenixgameshomepage:
         title: "PhenixGames Homepage"
-        description: "Eine Webseite für die Präsentation des GTA V RageMP Projekt."
+        description: "A website for the presentation of the GTA V RageMP project."
         img: "/phenixgameshomepage/phenixgameshomepage.png"
         tech:
             vue: true
@@ -314,8 +323,8 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/PhenixGames/PhenixGames-Homepage"
     scarexportfolio:
-        title: "Scarex Portfolio"
-        description: "Ein einzigartiges Portfolio für einen Cutter, der zuvor ein sehr standardisiertes Portfolio hatte."
+        title: "Scarex portfolio"
+        description: "A unique portfolio for an editor who previously had a very standardised portfolio."
         img: "/scarexportfolio/scarexportfolio.png"
         tech:
             vue: true
@@ -332,7 +341,7 @@ projects:
                 url: "https://blackdayz.github.io/scarex-portfolio/"
     phenixgamesgtaroleplay:
         title: "PhenixGames GTA Roleplay Server"
-        description: "Ein RageMP-Onlineserver, der es Spielern ermöglichte, in eine Rollenspielwelt einzutauchen und die Rolle ihres Charakters zu übernehmen. Das Projekt wurde aufgrund mangelnden Interesses an einer Weiterentwicklung eingestellt."
+        description: "A RageMP online server that allowed players to immerse themselves in a role-playing world and take on the role of their character. The project was cancelled due to a lack of interest in further development."
         img: "/phenixgamesgtaroleplay/phenixgamesgtaroleplay.png"
         tech:
             node: true
@@ -342,43 +351,38 @@ projects:
                 label: "GitHub"
                 url: "https://github.com/Mittelblut9/phenixgames-v3"
 
-header:
-    links:
-        example:
-            label: "Example"
-            icon: "i-heroicons-rocket-launch"
-            to: "/"
-
 footer: 
     copyright: "Copyright © {year}"
+    langSwitcher:
+        text: "Change language to {lang}"
     links:
         imprint:
-            label: "Impressum"
+            label: "Imprint"
             icon: "i-heroicons-rocket-launch"
         privacy:
-            label: "Datenschutz"
+            label: "Privacy"
             icon: "i-heroicons-rocket-launch"
 
 legal:
     hint:
-        description: "Wir bitten darum, dass sämtliche Adressen und Daten vertraulich behandelt werden und nicht an Dritte weitergegeben werden."
+        description: "Please ensure that all addresses and data are treated confidentially and are not passed on to third parties."
     meta:
         imprint:
-            title: "Impressum"
-            description: "Impressum"
+            title: "Imprint"
+            description: "Imprint"
         privacy:
-            title: "Datenschutz"
-            description: "Datenschutz"
+            title: "Privacy"
+            description: "Privacy"
 
 error:
-    base: "Ein Fehler ist aufgetreten"
-    hint: "Bitte versuchen Sie es später erneut"
-    back2home: "Zurück zur Startseite"
-    404: "{base} Die Seite konnte nicht gefunden werden"
-    403: "{base} Du hast keine Berechtigung, diese Seite zu sehen"
-    500: "{base} Ein interner Serverfehler ist aufgetreten"
-    401: "{base} Du hast keine Berechtigung, diese Seite zu sehen"
-    429: "{base} Zu viele Anfragen. Bitte versuche es später erneut"
+    base: "An error has occurred"
+    hint: "Please try again later"
+    back2home: "Back to the homepage"
+    404: "{base} The page could not be found"
+    403: "{base} You are not authorised to view this page"
+    500: "{base} An internal server error has occurred"
+    401: "{base} You are not authorised to view this page"
+    429: "{base} Too many requests. Please try again later"
 
 
 clients: 
@@ -389,7 +393,7 @@ clients:
         img: "/img/clients/rumathra.png"
     hautnah:
         name: "Hautnah"
-        description: "Medien Agentur"
+        description: "Media agency"
         url: "https://htnh.de"
         img: "/img/clients/htnh.svg"
     geilevideossos:

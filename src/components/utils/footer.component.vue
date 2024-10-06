@@ -15,7 +15,7 @@
                 class="cursor-pointer"
                 @click.prevent.stop="updateLocale(locale.code)"
             >
-              {{ $t('footer.langSwitcher.text', { lang: locale.name }) }}
+                {{ $t('footer.langSwitcher.text', { lang: locale.name }) }}
             </NuxtLink>
             <UColorModeButton />
             <UButton

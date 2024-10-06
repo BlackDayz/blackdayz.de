@@ -40,6 +40,15 @@ homepage:
 
 contact:
     button: "Lass quatschen"
+    page:
+        meta:
+            title: "Kontakt"
+            description: "Kontaktiere mich"
+        headline: "Du hast eine Projekt Idee?"
+        subheadline: "Kontaktiere mich"
+        buttons:
+            discord: "Discord"
+            email: "E-Mail"
 
 projects:
     meta:
@@ -243,7 +252,7 @@ projects:
         description: "Die Aufgabe in der Schule bestand darin, ein komplettes Redesign der Webseite https://www.visuelle-mediengestaltung.de durchzuführen. Nach ein paar Skizzen und Wireframes habe ich sofort mit der Entwicklung der Seite begonnen. Mit der Zeit wurde die alte Seite so mit JavaScript überladen, dass ich selbst den Überblick verlor. Aus diesem Grund entschied ich mich, alles von Grund auf neu zu beginnen und mehr auf die Code-Struktur und Organisation zu achten. In den Einstellungen verstecken sich einige Spielereien, wie zum Beispiel das Ein- und Ausschalten von Fehlermeldungen, JavaScript-Animationen, Cookie-Einstellungen und einen Dark Mode."
         img: "/mediengestaltungredesign/mediengestaltungredesign.png"
     calculator:
-        title: "Calculator"
+        title: "Taschenrechner"
         description: "Ein einfacher Taschenrechner – nichts Besonderes, aber funktional."
         img: "/calculator/calculator.png"
         tech:
@@ -341,13 +350,6 @@ projects:
                 type: "github"
                 label: "GitHub"
                 url: "https://github.com/Mittelblut9/phenixgames-v3"
-
-header:
-    links:
-        example:
-            label: "Example"
-            icon: "i-heroicons-rocket-launch"
-            to: "/"
 
 footer: 
     copyright: "Copyright © {year}"
