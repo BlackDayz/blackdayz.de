@@ -98,7 +98,7 @@
 </template>
 
 <script lang="ts">
-interface ProjectTech{
+interface ProjectTech {
   html: boolean;
   vue: boolean;
   node: boolean;
@@ -130,11 +130,27 @@ export default {
   },
   mounted() {
     const localeMessages = useI18n().getLocaleMessage(useI18n().locale.value) as Record<string, any>;
-    const projectStrings = localeMessages.projects[this.project.projectKey];
+
+    let projectStrings = {};
+
+    if(!this.project.projectKey) {
+      const searchedProject: string | undefined = Object.keys(localeMessages.projects).find(key => 
+        localeMessages.projects[key].title?.body.static === this.project.title
+      );
+
+      if(!searchedProject) {
+        return;
+      }
+      projectStrings = localeMessages.projects[searchedProject];
+    }else {
+      projectStrings = localeMessages.projects[this.project.projectKey];
+    }
   
     if (!projectStrings) {
       return;
     }
+
+    // @ts-expect-error
     this.projectTech = projectStrings.tech;
   }
 };

@@ -14,6 +14,9 @@
             :title="project.title"
             :description="project.description"
         >
+            <div class="grid justify-center">
+                <ProjectTechComponent :project="project" />
+            </div>
             <NuxtImg
                 :src="project.img"
                 :alt="project.title"
