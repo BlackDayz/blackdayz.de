@@ -11,7 +11,7 @@
             />
         </div>
         <ULandingSection
-            v-if="project.title"
+            v-if="project.title !== ''"
             :title="project.title"
             :description="project.description"
         >
