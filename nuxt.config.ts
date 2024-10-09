@@ -87,4 +87,10 @@ export default defineNuxtConfig({
     name: 'BlackDayz - Full-Stack Entwickler',
     description: 'Webseiten, Stream Tools und Gameshows.',
   },
+  imports: {
+    dirs: [
+      'composables/**',
+      'utils/**',
+    ]
+  },
 })
