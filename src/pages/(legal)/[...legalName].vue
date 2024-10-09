@@ -5,9 +5,11 @@
         </div>
         <div v-if="type === 'imprint'">
             <LegalImprintDeComponent v-if="locale === 'de-DE'" />
+            <LegalImprintEnComponent v-else />
         </div>
         <div v-else>
             <LegalPrivacyDeComponent v-if="locale === 'de-DE'" />
+            <LegalPrivacyEnComponent v-else />
         </div>
     </div>
 </template>
