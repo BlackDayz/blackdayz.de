@@ -79,7 +79,6 @@ export default {
   data() {
     return {
       projectName: useRoute().params.projectName[0],
-      projectData: {} as ProjectDataInterface,
       ProjectLinkTypes,
     };
   },
