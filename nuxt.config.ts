@@ -67,9 +67,21 @@ export default defineNuxtConfig({
       redirectOn: 'root'
     }
   },
-  build: {
-    transpile: ['sharp']
+  vite: {
+    build: {
+      terserOptions: {
+        mangle: {
+          properties: {
+            keep_quoted: true, // Prevent mangling of quoted property names
+          },
+        },
+      },
+    }
   },
+  build: {
+    transpile: ['sharp'],
+  },
+  // @ts-expect-error 'site' does not exist in type 'NuxtConfig'
   site: {
     url: 'https://www.blackdayz.de',
     name: 'BlackDayz - Full-Stack Entwickler',
