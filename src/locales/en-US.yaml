@@ -1,6 +1,11 @@
 general:
     company: "BlackDayz"
 
+header:
+    links:
+        projects: "Projects"
+        contact: "Contact"
+
 homepage:
     meta:
         title: "- Full-Stack Webdeveloper"
