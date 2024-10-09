@@ -34,3 +34,28 @@ export enum ProjectRoutes {
     Scarexportfolio = '/projects/scarexportfolio',
     Phenixgamesgtaroleplay = '/projects/phenixgamesgtaroleplay',
 }
+
+export enum ProjectLinkTypes {
+    Youtube = 'youtube',
+    Github = 'github',
+    Website = 'website',
+}
+
+export enum ProjectTech {
+    Vue = 'vue',
+    Nuxt = 'nuxt',
+    Typescript = 'typescript',
+    Html = 'html',
+    Node = 'node',
+    Axios = 'axios',
+    Jquery = 'jquery',
+    Javascript = 'javascript',
+    Php = 'php',
+    Css = 'css',
+    Yii = 'yii',
+    Shopify = 'shopify',
+    Liquid = 'liquid',
+    Supabase = 'supabase',
+    Websocket = 'websocket',
+    Appwrite = 'appwrite',
+}

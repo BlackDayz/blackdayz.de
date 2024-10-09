@@ -67,294 +67,161 @@ projects:
     mostscuffed:
         title: "Most Scuffed"
         description: "In dieser Gameshow geht es darum, wer am wenigsten Wissen hat – oder auch: 'Der Dümmste fliegt'. Die Spieler treten gegeneinander an und müssen verschiedene Fragen beantworten. Am Ende jeder Runde scheidet der Spieler mit den meisten Stimmen aus."
-        img: "/rumathra/mostscuffed.jpg"
-        tech: 
-            vue: true
-            nuxt: true
-            typescript: true
         links:
             youtube:
-                type: "youtube"
                 label: "YouTube Video"
-                url: "https://youtu.be/hWfrP8qfVEY?si=ZadMwM-w52bwhUGJ"
+
     mostscuffedv2:
         title: "Most Scuffed V2"
         description: "In dieser Gameshow traten zwei Teams mit jeweils vier Mitgliedern gegeneinander an. Ihre Aufgabe war es, das fehlende Wort in einem Satz zu erraten, das zuvor aus der Community gesammelt wurde. Das Team, das am Ende die meisten Punkte erzielte, gewann."
-        img: "/rumathra/mostscuffedv2.jpg"
-        tech: 
-            nuxt: true
-            typescript: true
-            supabase: true
         links:
             youtube:
-                type: "youtube"
                 label: "YouTube Video"
-                url: "https://youtu.be/OtQi25_K2ac?si=dwIbyRjsiXCnN59y"
     mittlay:
         title: "Mittlay"
         description: "Eine zentrale Plattform, mit der ich Projekte für Streamer verwalten kann. Dazu gehören aktuell: Stream-Overlays, Bingos und individuell angefertigte Elemente. Der Fokus liegt darauf, schnell und einfach neue Streamer hinzuzufügen, externe Editoren einzuladen und neue Projekte zu erstellen."
-        img: "/mittlay/mittlay.png"
-        detail:
-            img1: "/mittlay/settings_preview.png"
-            img2: "/mittlay/bingo_preview.png"
-        tech:
-            nuxt: true
-            typescript: true
-            appwrite: true
+
     rumathrabingo:
         title: "Rumathra Bingos"
         description: "Um zu vermeiden, dass Rumathra seine Bingos in Paint erstellen muss, habe ich ein Tool entwickelt, mit dem er schnell und einfach Bingos gestalten kann."
-        img: "/rumathra/rumathraBingo.png"
-        tech:
-            vue: true
         links:
             github:
-                type: "github"
                 label: "GitHub Main"
-                url: "https://github.com/Mittelblut9/rumathra-bingo"
             githubRosingBingo:
-                type: "github"
                 label: "GitHub Rosin Bingo"
-                url: "https://github.com/Mittelblut9/rumathra-rosin-bingo"
             githubSevenVsWild:
-                type: "github"
                 label: "GitHub 7vsWild Bingo"
-                url: "https://github.com/Mittelblut9/rumathra-7-vs-wild-bingo"
             githubAmarcub:
-                type: "github"
                 label: "GitHub AmarCub Bingo"
-                url: "https://github.com/Mittelblut9/ruamthra-amar-bingo"
             githubHardstuck:
-                type: "github"
                 label: "GitHub Hardstuck Bingo"
-                url: "https://github.com/Mittelblut9/ruamthra-amar-bingo"
+
     mittelbot:
         title: "Mittelbot - Discord Bot"
         description: "Ursprünglich wollte ich nur die Discord-API testen. Doch daraus entstand schnell ein Feature nach dem anderen. Jetzt ist der Bot voll funktionsfähig und bietet zahlreiche Funktionen wie Musik, Moderation, Spaß-Features, Spiele und vieles mehr."
-        img: "/mittelbot/mittelbot.png"
-        tech:
-            node: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelbots/Mittelbot"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://www.mittelbot.xyz/"
             inviteLink:
-                type: "website"
                 label: "Invite Link"
-                url: "https://discord.com/oauth2/authorize?client_id=918951367110971452&permissions=1513372511446&scope=bot%20applications.commands"
-            
+
     derduemmstefliegt:
         title: "Der Dümmste fliegt"
         description: "Ein Spiel, das von vielen bekannten Streamern in ihren Streams gespielt wird. Nachdem ich die goofy Version von Rumathra gesehen habe, wollte ich das Spiel intuitiv und benutzerfreundlich nachbauen. Das hier ist das Ergebnis."
-        img: "/derduemmstefliegt/derduemmstefliegt_waitroom.png"
-        tech:
-            vue: true
-            websocket: true
+
     phenixgamesteam:
         title: "PhenixGames Teambereich"
         description: "Ein Bereich für Teammitglieder des Projekts, in dem In-Game relevante Informationen eines Spielers oder Fahrzeugs bearbeitet werden können (z.B. einen Spieler bannen oder ein Fahrzeug löschen). Zudem lassen sich Forenbeiträge erstellen, Bewerbungen oder Anträge einsehen, annehmen oder ablehnen, webseitenbezogene Daten ändern und Logs einsehen. Die neue Herausforderung bestand darin, mit einem getrennten Frontend- und Backendsystem zu arbeiten. Zuvor konnte ich dies nur in meinem Praktikumsprojekt ausprobieren. Leider habe ich es nicht mehr geschafft, das Projekt vollständig aufzusetzen, daher habe ich ein Video von der Seite in der Entwicklungsumgebung erstellt."
-        img: "/phenixgames/teamarea/phenixgamesteam.png"
-        tech:
-            node: true
-            websocket: true
         links:
             frontend:
-                type: "github"
                 label: "GitHub Frontend"
-                url: "https://github.com/PhenixGames/PhenixGames-Team-Frontend"
             backend:
-                type: "github"
                 label: "GitHub Backend"
-                url: "https://github.com/PhenixGames/PhenixGames-Team-Backend"
+
     changerjslibrary:
         title: "Changer.js Library"
         description: "Eine Mini-Bibliothek, mit der sich Änderungen an einem oder mehreren Input-Feldern direkt im Browser einfach weiterverwenden lassen."
-        img: "/changerjslibrary/changerjslibrary.png"
-        tech:
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/ChangerJs"
     lacampanadesign:
         title: "La Campana Design - Konzept"
         description: "Ein Freund und ich hatten Lust, für ein lokales Restaurant eine neue Webseite zu erstellen. Wir sind zwar keine geborenen Designer, aber zwei Köpfe sind besser als einer. Also machten wir uns zuerst ans Design. Nach ein paar Stunden hatten wir eine feste Designidee (siehe PDF), die wir an das Restaurant schickten. Zunächst sah alles vielversprechend aus, doch nach einiger Zeit erhielten wir keine Antwort mehr. Im Frühjahr 2022 hatte das Restaurant schließlich eine neue Webseite – jedoch nicht von uns."
-        img: "/lacampanadesign/lacampanadesign.png"
+
     cookieclicker:
         title: "Cookie Clicker"
         description: "Das Spiel sollte meine JavaScript-Kenntnisse auffrischen. Die erste Version war auch meine erste große Erfahrung mit JavaScript. Ich begann mit der zweiten Version, weil der Code in der ersten sehr unübersichtlich wurde."
-        img: "/cookieclicker/cookieclicker.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
         links:
             websiteVersionOne:
-                type: "website"
                 label: "Website Version 1"
-                url: "https://mittelblut9.github.io/MyOpenSourceProjects-Outdated/Cookie_Clicker_V2/"
             githubVersionOne:
-                type: "github"
                 label: "GitHub Version 1"
-                url: "https://github.com/Mittelblut9/MyOpenSourceProjects-Outdated/tree/main/Cookie_Clicker_V2"
             websiteVersionTwo:
-                type: "website"
                 label: "Website Version 2"
-                url: "https://mittelblut9.github.io/Cookie-Clicker/"
             githubVersionTwo:
-                type: "github"
                 label: "GitHub Version 2"
-                url: "https://github.com/Mittelblut9/Cookie-Clicker"
+
     easylogindesign:
         title: "Einfaches Login Design"
         description: "Ich habe schnell ein Login-Design erstellt. Nichts Besonderes, aber funktional."
-        img: "/easylogindesign/easylogindesign.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/Easy-Login-Design-V1"
+
     nobadvibesshop:
         title: "NoBadVIBES Shop - Konzept"
         description: "Ein Klassenkamerad wollte seine Bekleidungsmarke wie einen normalen Shop anbieten. Das klang damals einfach. Nach 73 Stunden Entwicklungszeit wurde jedoch nicht mehr weitergearbeitet. Es gab viele Design- und Codebugs, und die Daten- und Codesicherheit ließ ebenfalls zu wünschen übrig. Dennoch war es das erste Mal, dass ich einen Shop entwickelt habe, und ich musste mir alles selbst beibringen – genauso wie bei all meinen bisherigen Projekten."
-        img: "/nobadvibesshop/nobadvibesshop.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/nobadVIBES"
+
     dazshop:
         title: "prodbyDAZ Shop - Konzept"
         description: "In diesem selbst entwickelten Shop sollten mehrere Produzenten ihre Produkte anbieten können, mit PayPal als Zahlungsmethode. Das klang damals einfach. Doch nach etwa 68 Stunden Entwicklungszeit wurde es mir neben der Schule zu viel. Seitdem ruht das Projekt in seinem aktuellen Zustand. Es gibt viele Design- und Codebugs, und die Daten- und Codesicherheit ist nicht optimal. Zudem gibt es eine wenig individuelle Codestruktur, die den Umzug auf eine neue Umgebung erschwert. Dennoch war es das erste Mal, dass ich einen Shop entwickelt habe, und ich musste mir alles selbst beibringen, wie bei all meinen bisherigen Projekten. Mein Plan, um dieses Projekt aufzufrischen, ist es, es komplett im Backend mit dem PHP-Framework CodeIgniter laufen zu lassen."
-        img: "/dazshop/dazshop.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/prodbydaz-v1"
+
     mediengestaltungredesign:
         title: "Mediengestaltung Redesign - Schulprojekt"
         description: "Die Aufgabe in der Schule bestand darin, ein komplettes Redesign der Webseite https://www.visuelle-mediengestaltung.de durchzuführen. Nach ein paar Skizzen und Wireframes habe ich sofort mit der Entwicklung der Seite begonnen. Mit der Zeit wurde die alte Seite so mit JavaScript überladen, dass ich selbst den Überblick verlor. Aus diesem Grund entschied ich mich, alles von Grund auf neu zu beginnen und mehr auf die Code-Struktur und Organisation zu achten. In den Einstellungen verstecken sich einige Spielereien, wie zum Beispiel das Ein- und Ausschalten von Fehlermeldungen, JavaScript-Animationen, Cookie-Einstellungen und einen Dark Mode."
-        img: "/mediengestaltungredesign/mediengestaltungredesign.png"
+
     calculator:
         title: "Taschenrechner"
         description: "Ein einfacher Taschenrechner – nichts Besonderes, aber funktional."
-        img: "/calculator/calculator.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/Calculator-JavaScript"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://mittelblut9.github.io/Calculator-JavaScript/"
+
     nounfollowtwitch:
         title: "No unfollow Twitch - Browser Extension"
         description: "Eine Browser-Erweiterung, die den 'Unfollow'-Button entfernt. Jeder kennt es: ein 'Missclick', und die 4+ Jahre lange Follow-Streak ist vorbei."
-        img: "/nounfollowtwitch/nounfollowtwitch.jpg"
-        tech:
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/no-unfollow-twitch"
             addon:
-                type: "website"
                 label: "Firefox Addon"
-                url: "https://addons.mozilla.org/de/firefox/addon/no-unfollow-twitch/"
+
     voteplusshopwareplugin:
         title: "Vote+ Shopware 5 Plugin"
         description: "Ein Shopware 5 Plugin, das ich in den ersten Wochen meiner Ausbildung entwickelt habe. Es ermöglicht Kunden, Produkte zu bewerten und diese Bewertungen einzusehen."
-        img: "/voteplusshopwareplugin/voteplusshopwareplugin.png"
-        tech:
-            php: true
         links:
             github:
-                type: "github"
-                label: "GitHub"
-                url: "https://github.com/Mittelblut9/VotePlus"
+               label: "GitHub"
+
     studiodevoyage:
         title: "Studio de Voyage - Online Shop"
         description: "Ein Online-Shop für die Modemarke 'Studio de Voyage', der mit Shopify erstellt wurde. Ich habe die technische Umsetzung übernommen, einschließlich der Anpassungen des Themes und der Einrichtung."
-        img: "/studiodevoyage/studiodevoyage.png"
-        tech:
-            shopify: true
+
     subscriptor:
         title: "Subscriptor"
         description: "Im Sommer 2021 hatte ich die Gelegenheit, ein Praktikum bei https://sascha-nos.com zu absolvieren, bei dem ich eine Webseite entwickeln sollte, auf der Benutzer ihre Abonnements hinzufügen und verwalten können. Außerdem implementierte ich ein Benachrichtigungssystem, das die Benutzer in Echtzeit über die neuesten Updates ihrer Abonnements informiert. Leider ist der Source-Code privat, und die Seite war zu diesem Zeitpunkt gelegentlich nicht erreichbar. Deshalb zeige ich hier einige Bilder der Webseite aus meinem Praktikumsbericht."
-        img: "/subscriptor/subscriptor.png"
-        tech:
-            vue: true
-            css: true
-            javascript: true
-            php: true
+
     phenixgameshomepage:
         title: "PhenixGames Homepage"
         description: "Eine Webseite für die Präsentation des GTA V RageMP Projekt."
-        img: "/phenixgameshomepage/phenixgameshomepage.png"
-        tech:
-            vue: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/PhenixGames/PhenixGames-Homepage"
+
     scarexportfolio:
         title: "Scarex Portfolio"
         description: "Ein einzigartiges Portfolio für einen Cutter, der zuvor ein sehr standardisiertes Portfolio hatte."
-        img: "/scarexportfolio/scarexportfolio.png"
-        tech:
-            vue: true
-            css: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/scarex-portfolio"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://blackdayz.github.io/scarex-portfolio/"
     phenixgamesgtaroleplay:
         title: "PhenixGames GTA Roleplay Server"
         description: "Ein RageMP-Onlineserver, der es Spielern ermöglichte, in eine Rollenspielwelt einzutauchen und die Rolle ihres Charakters zu übernehmen. Das Projekt wurde aufgrund mangelnden Interesses an einer Weiterentwicklung eingestellt."
-        img: "/phenixgamesgtaroleplay/phenixgamesgtaroleplay.png"
-        tech:
-            node: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/phenixgames-v3"
 
 footer: 
     copyright: "Copyright © {year}"

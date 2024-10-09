@@ -14,14 +14,14 @@
             >
                 <template #icon>
                     <NuxtImg
-                        :src="module.img"
+                        :src="`/img/projects/${module.projectData.img}`"
                         class="h-48 w-full object-cover"
                     />
                 </template>
                 <template #description>
                     <span class="line-clamp-2">{{ module.description }}</span>
                     <div class="mt-3">
-                        <ProjectTechComponent :project="module" />
+                        <ProjectTechComponent :project-tech="module.projectData.tech" />
                     </div>
                 </template>
             </UPageCard>
@@ -85,7 +85,7 @@ export default {
         projectKey: key,
         title: this.$t(`projects.${key}.title`),
         description: this.$t(`projects.${key}.description`),
-        img: '/img/projects' + this.$t(`projects.${key}.img`),
+        projectData: projectsData[key],
         // @ts-expect-error
         to: ProjectRoutes[key.charAt(0).toUpperCase() + key.slice(1)],
       }));

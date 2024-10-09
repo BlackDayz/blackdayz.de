@@ -11,55 +11,57 @@
             />
         </div>
         <ULandingSection
-            v-if="project.title !== ''"
-            :title="project.title"
-            :description="project.description"
+            v-if="projectData"
+            :title="$t(`projects.${projectName}.title`)"
+            :description="$t(`projects.${projectName}.description`)"
         >
             <div class="grid justify-center">
-                <ProjectTechComponent :project="project" />
+                <ProjectTechComponent :project-tech="projectData.tech" />
             </div>
+            
             <NuxtImg
-                :src="project.img"
-                :alt="project.title"
+                :src="`/img/projects/${projectData.img}`"
+                :alt="$t(`projects.${projectName}.title`)"
                 class="w-screen"
             />
-            <div v-if="project.moreImgs.length > 0">
+            
+            <div v-if="projectData.moreImg.length > 0">
                 <NuxtImg
-                    v-for="(img, index) in project.moreImgs"
+                    v-for="(img, index) in projectData.moreImg"
                     :key="index"
-                    :src="img"
-                    :alt="project.title"
+                    :src="`/img/projects/${img}`"
+                    :alt="$t(`projects.${projectName}.title`)"
                     class="w-screen"
                 />
             </div>
 
-            <div class="flex justify-center">
+            <div class="grid justify-center md:flex">            
                 <div
-                    v-for="link in project.links"
+                    v-for="link in projectData.links"
                     :key="link.key"
                 >
                     <NuxtLink
-                        :to="link.link"
+                        :to="link.url"
                         :external="true"
                         target="_blank"
                         class="text-cyan-500 hover:text-cyan-700 flex items-center mx-3"
                     >
                         <UIcon
-                            v-if="link.type === 'youtube'"
+                            v-if="link.type === ProjectLinkTypes.Youtube"
                             name="i-mdi-youtube"
                             class="mr-2"
                         />
                         <UIcon
-                            v-if="link.type === 'github'"
+                            v-if="link.type === ProjectLinkTypes.Github"
                             name="i-mdi-github"
                             class="mr-2"
                         />
                         <UIcon
-                            v-if="link.type === 'website'"
+                            v-if="link.type === ProjectLinkTypes.Website"
                             name="i-mdi-web"
                             class="mr-2"
                         />
-                        <span v-text="link.label" />
+                        <span v-text="$t(`projects.${projectName}.links.${link.key}.label`)" />
                         <UIcon
                             name="i-ic-outline-launch"
                             class="ml-2"
@@ -72,79 +74,32 @@
 </template>
 
 <script lang="ts">
-interface ProjectLink {
-  key: string;
-  label: string;
-  link: string;
-  type: 'youtube' | 'github' | 'website';
-}
-
 export default {
   name: 'ProjectsDetailPage',
   data() {
     return {
       projectName: useRoute().params.projectName[0],
-      project: {
-        title: '',
-        description: '',
-        img: '',
-        moreImgs: [] as string[],
-        links: [] as ProjectLink[],
-      },
+      projectData: {} as ProjectDataInterface,
+      ProjectLinkTypes,
     };
+  },
+  computed: {
+    projectData(): ProjectDataInterface {
+        return projectsData[this.projectName];
+    },
   },
   mounted() {
-    const localeMessages = useI18n().getLocaleMessage(useI18n().locale.value) as Record<string, any>;
-    const projectStrings = localeMessages.projects[this.projectName];
-    if(!projectStrings) {
-      throw createError({
-        statusCode: 404,
-      });
-    }
-
-    // Remove this line after debugging
-    console.debug(localeMessages, projectStrings);
-
-    this.updateMeta(projectStrings);
-
-    const detailImgs = Object.keys(projectStrings.detail || {});
-    const newImgs: string[] = [];
-    if(detailImgs.length > 0) {
-      detailImgs.forEach((key) => {
-        newImgs.push('/img/projects' + projectStrings.detail[key].body.static);
-      });
-    }
-
-    const links = Object.keys(projectStrings.links || {});
-    const newLinks: ProjectLink[] = [];
-    if(links.length > 0) {
-      links.forEach((key) => {
-        newLinks.push({
-          key,
-          type: projectStrings.links[key].type.body.static,
-          label: projectStrings.links[key].label.body.static,
-          link: projectStrings.links[key].url.body.static
-        });
-      });
-    }
-
-    this.project = {
-      title: projectStrings.title.body.static,
-      description: projectStrings.description.body.static,
-      img: '/img/projects' + projectStrings.img.body.static,
-      moreImgs: newImgs || [],
-      links: newLinks || [],
-    };
+    this.updateMeta();
   },
   methods: {
-    updateMeta(projectStrings: Record<string, any>) {
+    updateMeta() {
       useHead({
-        title: `${projectStrings.title.body.static} | ${this.$t('general.company')}`,
+        title: `${this.$t(`projects.${this.projectName}.title`)} | ${this.$t('general.company')}`,
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: projectStrings.description.body.static,
+            content: this.$t(`projects.${this.projectName}.description`),
           },
         ],
       });
