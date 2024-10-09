@@ -1,5 +1,5 @@
 <template>
-    <UHeader>
+    <UHeader :links="links">
         <template #logo>
             <NuxtImg
                 src="/img/logo/BlackDayzLogo.png"
@@ -13,5 +13,19 @@
 <script lang="ts">
 export default {
   name: 'HeaderComponent',
+  data() {
+    return {
+        links: [
+            {
+                label: this.$t('header.links.projects'),
+                to: Routes.Projects
+            },
+            {
+                label: this.$t('header.links.contact'),
+                to: Routes.Contact
+            }
+        ]
+    };
+  },
 };
 </script>
