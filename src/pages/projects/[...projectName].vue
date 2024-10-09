@@ -101,16 +101,11 @@ export default {
         statusCode: 404,
       });
     }
-    useHead({
-      title: `${projectStrings.title.body.static} | ${this.$t('general.company')}`,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: projectStrings.description.body.static,
-        },
-      ],
-    });
+
+    // Remove this line after debugging
+    console.debug(localeMessages, projectStrings);
+
+    this.updateMeta(projectStrings);
 
     const detailImgs = Object.keys(projectStrings.detail || {});
     const newImgs: string[] = [];
@@ -140,6 +135,20 @@ export default {
       moreImgs: newImgs || [],
       links: newLinks || [],
     };
+  },
+  methods: {
+    updateMeta(projectStrings: Record<string, any>) {
+      useHead({
+        title: `${projectStrings.title.body.static} | ${this.$t('general.company')}`,
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: projectStrings.description.body.static,
+          },
+        ],
+      });
+    }
   }
 };
 </script>
