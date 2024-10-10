@@ -67,294 +67,173 @@ projects:
     mostscuffed:
         title: "Most Scuffed"
         description: "This game show is about who has the least knowledge - or: 'Der Dümmste Fliegt'. The players compete against each other and have to answer various questions. At the end of each round, the player with the most votes is eliminated."
-        img: "/rumathra/mostscuffed.jpg"
-        tech: 
-            vue: true
-            nuxt: true
-            typescript: true
         links:
             youtube:
-                type: "youtube"
                 label: "YouTube video"
-                url: "https://youtu.be/hWfrP8qfVEY?si=ZadMwM-w52bwhUGJ"
+
     mostscuffedv2:
         title: "Most Scuffed V2"
         description: "In this game show, two teams with four members each competed against each other. Their task was to guess the missing word in a sentence that had previously been collected from the community. The team that scored the most points at the end won."
-        img: "/rumathra/mostscuffedv2.jpg"
-        tech: 
-            nuxt: true
-            typescript: true
-            supabase: true
         links:
             youtube:
-                type: "youtube"
                 label: "YouTube video"
-                url: "https://youtu.be/OtQi25_K2ac?si=dwIbyRjsiXCnN59y"
+
     mittlay:
         title: "Mittlay"
         description: "A central platform with which I can manage projects for streamers. This currently includes: stream overlays, bingos and customised elements. The focus is on adding new streamers quickly and easily, inviting external editors and creating new projects."
-        img: "/mittlay/mittlay.png"
-        detail:
-            img1: "/mittlay/settings_preview.png"
-            img2: "/mittlay/bingo_preview.png"
-        tech:
-            nuxt: true
-            typescript: true
-            appwrite: true
+
     rumathrabingo:
         title: "Rumathra Bingos"
         description: "To avoid Rumathra having to create his bingos in Paint, I have developed a tool with which he can design bingos quickly and easily."
-        img: "/rumathra/rumathraBingo.png"
-        tech:
-            vue: true
         links:
             github:
-                type: "github"
                 label: "GitHub Main"
-                url: "https://github.com/Mittelblut9/rumathra-bingo"
             githubRosingBingo:
-                type: "github"
                 label: "GitHub Rosin Bingo"
-                url: "https://github.com/Mittelblut9/rumathra-rosin-bingo"
             githubSevenVsWild:
-                type: "github"
                 label: "GitHub 7vsWild Bingo"
-                url: "https://github.com/Mittelblut9/rumathra-7-vs-wild-bingo"
             githubAmarcub:
-                type: "github"
                 label: "GitHub AmarCub Bingo"
-                url: "https://github.com/Mittelblut9/ruamthra-amar-bingo"
             githubHardstuck:
-                type: "github"
                 label: "GitHub Hardstuck Bingo"
-                url: "https://github.com/Mittelblut9/ruamthra-amar-bingo"
+
     mittelbot:
         title: "Mittelbot - Discord Bot"
         description: "Originally, I only wanted to test the Discord API. But it quickly evolved into one feature after another. Now the bot is fully functional and offers numerous functions such as music, moderation, fun features, games and much more."
-        img: "/mittelbot/mittelbot.png"
-        tech:
-            node: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelbots/Mittelbot"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://www.mittelbot.xyz/"
             inviteLink:
-                type: "website"
                 label: "Invite Link"
-                url: "https://discord.com/oauth2/authorize?client_id=918951367110971452&permissions=1513372511446&scope=bot%20applications.commands"
             
     derduemmstefliegt:
         title: "Der Dümmste fliegt"
         description: "A game that is played by many well-known streamers in their streams. After seeing the goofy version of Rumathra, I wanted to recreate the game in an intuitive and user-friendly way. This is the result."
-        img: "/derduemmstefliegt/derduemmstefliegt_waitroom.png"
-        tech:
-            vue: true
-            websocket: true
+
     phenixgamesteam:
         title: "PhenixGames Teamarea"
         description: "An area for team members of the project where in-game relevant information of a player or vehicle can be edited (e.g. ban a player or delete a vehicle). In addition, forum posts can be created, applications or requests can be viewed, accepted or rejected, website-related data can be changed and logs can be viewed. The new challenge was to work with a separate front-end and back-end system. Previously, I had only been able to try this out in my internship project. Unfortunately, I didn't manage to set up the project completely, so I created a video of the site in the development environment."
-        img: "/phenixgames/teamarea/phenixgamesteam.png"
-        tech:
-            node: true
-            websocket: true
+
         links:
             frontend:
-                type: "github"
                 label: "GitHub Frontend"
-                url: "https://github.com/PhenixGames/PhenixGames-Team-Frontend"
             backend:
-                type: "github"
                 label: "GitHub Backend"
-                url: "https://github.com/PhenixGames/PhenixGames-Team-Backend"
+
     changerjslibrary:
         title: "Changer.js Library"
         description: "A mini-library with which changes to one or more input fields can be easily reused directly in the browser."
-        img: "/changerjslibrary/changerjslibrary.png"
-        tech:
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/ChangerJs"
+
     lacampanadesign:
         title: "La Campana Design - Concept"
         description: "A friend and I wanted to create a new website for a local restaurant. We may not be born designers, but two heads are better than one. So we set to work on the design first. After a few hours, we had a solid design idea (see PDF) that we sent to the restaurant. At first everything looked promising, but after a while we received no response. In spring 2022, the restaurant finally had a new website - but not from us."
-        img: "/lacampanadesign/lacampanadesign.png"
+
     cookieclicker:
         title: "Cookie Clicker"
         description: "The game was intended to refresh my JavaScript skills. The first version was also my first big experience with JavaScript. I started with the second version because the code in the first became very confusing."
-        img: "/cookieclicker/cookieclicker.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
+
         links:
             websiteVersionOne:
-                type: "website"
                 label: "Website Version 1"
-                url: "https://mittelblut9.github.io/MyOpenSourceProjects-Outdated/Cookie_Clicker_V2/"
             githubVersionOne:
-                type: "github"
                 label: "GitHub Version 1"
-                url: "https://github.com/Mittelblut9/MyOpenSourceProjects-Outdated/tree/main/Cookie_Clicker_V2"
             websiteVersionTwo:
-                type: "website"
                 label: "Website Version 2"
-                url: "https://mittelblut9.github.io/Cookie-Clicker/"
             githubVersionTwo:
-                type: "github"
                 label: "GitHub Version 2"
-                url: "https://github.com/Mittelblut9/Cookie-Clicker"
+
     easylogindesign:
         title: "Easy Login Design"
         description: "I quickly created a login design. Nothing special, but functional."
-        img: "/easylogindesign/easylogindesign.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/Easy-Login-Design-V1"
+
     nobadvibesshop:
         title: "NoBadVIBES Shop - Concept"
         description: "A classmate wanted to offer his clothing brand like a normal shop. It sounded simple at the time. However, after 73 hours of development, the project was discontinued. There were many design and code bugs, and the data and code security also left a lot to be desired. Nevertheless, it was the first time I had developed a shop and I had to teach myself everything - just like with all my previous projects."
-        img: "/nobadvibesshop/nobadvibesshop.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/nobadVIBES"
+
     dazshop:
         title: "prodbyDAZ Shop - Concept"
         description: "Several producers were to be able to offer their products in this self-developed shop, with PayPal as a payment method. That sounded simple at the time. However, after around 68 hours of development time, it became too much for me outside of school. Since then, the project has been dormant in its current state. There are many design and code bugs, and the data and code security is not optimal. In addition, the code structure is not very customised, which makes it difficult to move to a new environment. Nevertheless, it was the first time I had developed a shop and I had to teach myself everything, as with all my previous projects. My plan to refresh this project is to run it entirely in the backend with the PHP framework CodeIgniter."
-        img: "/dazshop/dazshop.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/prodbydaz-v1"
+
     mediengestaltungredesign:
         title: "Mediengestaltung Redesign - school project"
         description: "The task at school was to carry out a complete redesign of the website https://www.visuelle-mediengestaltung.de. After a few sketches and wireframes, I immediately started developing the site. Over time, the old site became so overloaded with JavaScript that I lost track of it myself. For this reason, I decided to start everything from scratch and pay more attention to the code structure and organisation. There are a few gimmicks hidden in the settings, such as switching error messages on and off, JavaScript animations, cookie settings and a dark mode."
-        img: "/mediengestaltungredesign/mediengestaltungredesign.png"
+        links:
+            github:
+                label: "GitHub"
+            website:
+                label: "Website"
+            ownWebsite:
+                label: "Redesign Website"
+
     calculator:
         title: "Calculator"
         description: "A simple pocket calculator - nothing special, but functional."
-        img: "/calculator/calculator.png"
-        tech:
-            html: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/Calculator-JavaScript"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://mittelblut9.github.io/Calculator-JavaScript/"
+
     nounfollowtwitch:
         title: "No unfollow Twitch - Browser Extension"
         description: "A browser extension that removes the ‘Unfollow’ button. Everyone knows it: one ‘missclick’ and the 4+ year long follow streak is over."
-        img: "/nounfollowtwitch/nounfollowtwitch.jpg"
-        tech:
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/no-unfollow-twitch"
             addon:
-                type: "website"
                 label: "Firefox Addon"
-                url: "https://addons.mozilla.org/de/firefox/addon/no-unfollow-twitch/"
+
     voteplusshopwareplugin:
         title: "Vote+ Shopware 5 Plugin"
         description: "A Shopware 5 plugin that I developed in the first few weeks of my training. It allows customers to rate products and view these ratings."
-        img: "/voteplusshopwareplugin/voteplusshopwareplugin.png"
-        tech:
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/VotePlus"
+
     studiodevoyage:
         title: "Studio de Voyage - Online Shop"
         description: "An online shop for the fashion brand 'Studio de Voyage', which was created with Shopify. I took care of the technical implementation, including customising the theme and setting it up."
-        img: "/studiodevoyage/studiodevoyage.png"
-        tech:
-            shopify: true
+
     subscriptor:
         title: "Subscriptor"
         description: "In the summer of 2021, I had the opportunity to do an internship at https://sascha-nos.com, where I was asked to develop a website where users can add and manage their subscriptions. I also implemented a notification system that informs users in real time about the latest updates to their subscriptions. Unfortunately, the source code is private and the site was occasionally unavailable at the time. Therefore, I show some pictures of the website from my internship report here."
-        img: "/subscriptor/subscriptor.png"
-        tech:
-            vue: true
-            css: true
-            javascript: true
-            php: true
+
     phenixgameshomepage:
         title: "PhenixGames Homepage"
         description: "A website for the presentation of the GTA V RageMP project."
-        img: "/phenixgameshomepage/phenixgameshomepage.png"
-        tech:
-            vue: true
-            css: true
-            javascript: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/PhenixGames/PhenixGames-Homepage"
+
     scarexportfolio:
         title: "Scarex portfolio"
         description: "A unique portfolio for an editor who previously had a very standardised portfolio."
-        img: "/scarexportfolio/scarexportfolio.png"
-        tech:
-            vue: true
-            css: true
-            php: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/BlackDayz/scarex-portfolio"
             website:
-                type: "website"
                 label: "Website"
-                url: "https://blackdayz.github.io/scarex-portfolio/"
+
     phenixgamesgtaroleplay:
         title: "PhenixGames GTA Roleplay Server"
         description: "A RageMP online server that allowed players to immerse themselves in a role-playing world and take on the role of their character. The project was cancelled due to a lack of interest in further development."
-        img: "/phenixgamesgtaroleplay/phenixgamesgtaroleplay.png"
-        tech:
-            node: true
         links:
             github:
-                type: "github"
                 label: "GitHub"
-                url: "https://github.com/Mittelblut9/phenixgames-v3"
 
 footer: 
     copyright: "Copyright © {year}"
