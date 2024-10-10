@@ -194,8 +194,23 @@ export const projectsData: ProjectDataObjectInterface = {
     },
     mediengestaltungredesign: {
         img: '/mediengestaltungredesign/mediengestaltungredesign.png',
-        tech: [],
-        links: [],
+        tech: [
+            ProjectTech.Html,
+            ProjectTech.Css,
+            ProjectTech.Javascript,
+        ],
+        links: [
+            {
+                key: 'website',
+                type: ProjectLinkTypes.Website,
+                url: 'https://www.visuelle-mediengestaltung.de/'
+            },
+            {
+                key: 'github',
+                type: ProjectLinkTypes.Github,
+                url: 'https://github.com/Mittelblut9/Portfolio-Website-template'
+            }
+        ],
         moreImg: []
     },
     calculator: {
