@@ -206,6 +206,11 @@ export const projectsData: ProjectDataObjectInterface = {
                 url: 'https://www.visuelle-mediengestaltung.de/'
             },
             {
+                key: 'ownWebsite',
+                type: ProjectLinkTypes.Website,
+                url: 'https://mittelblut9.github.io/Portfolio-Website-template/#'
+            },
+            {
                 key: 'github',
                 type: ProjectLinkTypes.Github,
                 url: 'https://github.com/Mittelblut9/Portfolio-Website-template'

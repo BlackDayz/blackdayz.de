@@ -167,6 +167,13 @@ projects:
     mediengestaltungredesign:
         title: "Mediengestaltung Redesign - Schulprojekt"
         description: "Die Aufgabe in der Schule bestand darin, ein komplettes Redesign der Webseite https://www.visuelle-mediengestaltung.de durchzuführen. Nach ein paar Skizzen und Wireframes habe ich sofort mit der Entwicklung der Seite begonnen. Mit der Zeit wurde die alte Seite so mit JavaScript überladen, dass ich selbst den Überblick verlor. Aus diesem Grund entschied ich mich, alles von Grund auf neu zu beginnen und mehr auf die Code-Struktur und Organisation zu achten. In den Einstellungen verstecken sich einige Spielereien, wie zum Beispiel das Ein- und Ausschalten von Fehlermeldungen, JavaScript-Animationen, Cookie-Einstellungen und einen Dark Mode."
+        links:
+            github:
+                label: "GitHub"
+            website:
+                label: "Website"
+            ownWebsite:
+                label: "Redesign Website"
 
     calculator:
         title: "Taschenrechner"
