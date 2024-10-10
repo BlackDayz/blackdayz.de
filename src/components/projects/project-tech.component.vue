@@ -9,7 +9,7 @@
             :key="index"
             :src="projectTechImg[tech]"
             :title="tech"
-            class="me-2 w-full"
+            class="me-2 w-8 h-8 object-contain"
         />
     </div>
 </template>
@@ -30,10 +30,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-img {
-  width: 32px;
-  height: 32px;
-}
-</style>
