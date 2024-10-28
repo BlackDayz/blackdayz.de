@@ -57,6 +57,7 @@ export default {
   computed: {
     modules() {
       const keys = [
+        'mostscuffedep6',
         'mittlay',
         'mostscuffed',
         'mostscuffedv2',

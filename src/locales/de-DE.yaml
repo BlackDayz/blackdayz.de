@@ -72,7 +72,7 @@ projects:
                 label: "YouTube Video"
 
     mostscuffedv2:
-        title: "Most Scuffed V2"
+        title: "Most Scuffed Episode 5"
         description: "In dieser Gameshow traten zwei Teams mit jeweils vier Mitgliedern gegeneinander an. Ihre Aufgabe war es, das fehlende Wort in einem Satz zu erraten, das zuvor aus der Community gesammelt wurde. Das Team, das am Ende die meisten Punkte erzielte, gewann."
         links:
             youtube:
@@ -229,6 +229,13 @@ projects:
         links:
             github:
                 label: "GitHub"
+    
+    mostscuffedep6:
+        title: "Most Scuffed Episode 6"
+        description: "In dieser Gameshow traten drei Streamer gegeneinander an, um Fragen auf einem Board zu beantworten. Jede Frage war mit einer bestimmten Punktzahl verknüpft, die sie für richtige Antworten erhielten, während falsche Antworten Minuspunkte brachten. Am Ende der zweiten Runde schied derjenige mit den wenigsten Punkten aus. Im Finale wurde eine kurze Version von „Der Klügste bleibt“ gespielt, bei der der Spieler mit null Leben als Erster ausschied. Am Ende konnte sich Trymacs den Sieg sichern."
+        links:
+            youtube:
+                label: "YouTube Video"
 
 footer: 
     copyright: "Copyright © {year}"
