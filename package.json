@@ -41,7 +41,7 @@
     "@pinia/nuxt": "^0.5.5",
     "@sentry/nuxt": "^8.33.1",
     "pinia": "^2.2.0",
-    "sass": "^1.79.4"
+    "sass": "^1.80.5"
   },
   "overrides": {
     "sharp": "^0.33.4"
