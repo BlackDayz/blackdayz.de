@@ -17,6 +17,10 @@
     "prepare": "husky"
   },
   "devDependencies": {
+    "@iconify-json/cib": "^1.2.1",
+    "@iconify-json/hugeicons": "^1.2.1",
+    "@iconify-json/mingcute": "^1.2.1",
+    "@iconify-json/simple-icons": "^1.2.11",
     "@nuxt/devtools": "latest",
     "@nuxt/fonts": "^0.10.0",
     "@nuxt/image": "^1.8.1",
