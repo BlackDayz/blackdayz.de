@@ -39,7 +39,7 @@
     "@nuxtjs/seo": "^2.0.0-rc.23",
     "@nuxtjs/sitemap": "^6.1.1",
     "@pinia/nuxt": "^0.5.5",
-    "@sentry/nuxt": "^8.33.1",
+    "@sentry/nuxt": "^8.38.0",
     "pinia": "^2.2.6",
     "sass": "^1.81.0"
   },
