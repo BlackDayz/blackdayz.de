@@ -44,7 +44,7 @@
     "@nuxtjs/sitemap": "^6.1.1",
     "@pinia/nuxt": "^0.7.0",
     "@sentry/nuxt": "^8.42.0",
-    "pinia": "^2.2.6",
+    "pinia": "^2.2.8",
     "sass": "^1.81.0"
   },
   "overrides": {
