@@ -237,6 +237,14 @@ projects:
             youtube:
                 label: "YouTube Video"
 
+    mostscuffedep7:
+        title: "Most Scuffed Episode 7"
+        description: "In dieser Gameshow dreht sich alles um die spannende Frage: Wer hat das geringste Allgemeinwissen? Oder anders gesagt: \"Der Dümmste fliegt\". Die Teilnehmer treten in mehreren Runden gegeneinander an und beantworten unterschiedliche Fragen. Am Ende jeder Runde scheidet der Spieler mit den meisten Stimmen aus. In dieser Episode gibt es jedoch eine besondere Neuerung: die <span class=\"font-bold\">Redemption Phase</span>. Hier haben ausgeschiedene Spieler die Möglichkeit, sich eine zweite Chance zu erkämpfen. Wer in dieser Phase eine festgelegte Anzahl von Fragen korrekt beantwortet, kann einmalig dem Ausscheiden entgehen und ins Spiel zurückkehren."
+        links:
+            youtube:
+                label: "YouTube Video"
+    
+
 footer: 
     copyright: "Copyright © {year}"
     langSwitcher:

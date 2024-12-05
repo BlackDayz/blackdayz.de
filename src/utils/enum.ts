@@ -34,6 +34,7 @@ export enum ProjectRoutes {
     Scarexportfolio = '/projects/scarexportfolio',
     Phenixgamesgtaroleplay = '/projects/phenixgamesgtaroleplay',
     Mostscuffedep6 = '/projects/mostscuffedep6',
+    Mostscuffedep7 = '/projects/mostscuffedep7',
 }
 
 export enum ProjectLinkTypes {
