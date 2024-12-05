@@ -235,6 +235,13 @@ projects:
             github:
                 label: "GitHub"
 
+    mostscuffedep6:
+        title: "Most Scuffed Episode 6"
+        description: "In this game show, three streamers competed against each other to answer questions on a board. Each question was linked to a certain number of points, which they received for correct answers, while incorrect answers brought minus points. At the end of the second round, the streamer with the fewest points was eliminated. In the final, a short version of “The smartest one stays” was played, in which the player with zero lives was the first to be eliminated. In the end, Trymacs was able to secure victory."
+        links:
+            youtube:
+                label: "YouTube video"
+
 footer: 
     copyright: "Copyright © {year}"
     langSwitcher:
