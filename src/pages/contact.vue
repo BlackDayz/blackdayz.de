@@ -3,11 +3,11 @@
         <div class="text-center grid justify-center gap-3 mb-10">
             <h1
                 class="text-5xl font-bold"
-                v-text="$t('contact.page.headline')"
+                v-text="useI18n().t('contact.page.headline')"
             />
             <h2
                 class="text-3xl"
-                v-text="$t('contact.page.subheadline')"
+                v-text="useI18n().t('contact.page.subheadline')"
             />
             <div class="grid justify-center mt-4">
                 <NuxtImg 
@@ -20,7 +20,7 @@
             <UButton 
                 variant="outline"
                 icon="i-simple-icons-github"
-                :label="$t('contact.page.buttons.discord')"
+                :label="useI18n().t('contact.page.buttons.discord')"
                 size="lg"
                 type="link"
                 :to="contact.discord"
@@ -31,7 +31,7 @@
                 icon="i-material-symbols-alternate-email"
                 type="link"
                 :to="`mailto:${contact.email}`"
-                :label="$t('contact.page.buttons.email')"
+                :label="useI18n().t('contact.page.buttons.email')"
             />
         </div>
     </ULandingSection>
