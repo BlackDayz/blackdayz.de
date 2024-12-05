@@ -31,6 +31,7 @@ export default {
                 },
             } as Record<'de-DE' | 'en-US', { imprint: Routes; privacy: Routes; }>,
             type: '' as 'imprint' | 'privacy',
+            translate: useI18n(),
         };
     },
     beforeMount() {
@@ -38,12 +39,12 @@ export default {
     },
     mounted() {
         useHead({
-        title: `${this.$t('legal.meta.imprint.title')} | ${this.$t('general.company')}`,
+        title: `${this.translate.t('legal.meta.imprint.title')} | ${this.translate.t('general.company')}`,
         meta: [
             {
                 hid: 'description',
                 name: 'description',
-                content: this.$t('legal.meta.imprint.title'),
+                content: this.translate.t('legal.meta.imprint.title'),
             },
         ],
         });

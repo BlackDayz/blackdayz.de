@@ -235,13 +235,19 @@ projects:
             github:
                 label: "GitHub"
 
+    mostscuffedep6:
+        title: "Most Scuffed Episode 6"
+        description: "In this game show, three streamers competed against each other to answer questions on a board. Each question was linked to a certain number of points, which they received for correct answers, while incorrect answers brought minus points. At the end of the second round, the streamer with the fewest points was eliminated. In the final, a short version of “The smartest one stays” was played, in which the player with zero lives was the first to be eliminated. In the end, Trymacs was able to secure victory."
+        links:
+            youtube:
+                label: "YouTube video"
+
     mostscuffedep7:
         title: "Most Scuffed Episode 7"
         description: "In this game show, everything revolves around the exciting question: Who has the least general knowledge? Or in other words: \"The dumbest gets eliminated.\" The participants compete against each other in multiple rounds, answering a variety of questions. At the end of each round, the player with the most votes is eliminated. However, this episode features a special twist: the <span class=\"font-bold\">Redemption Phase</span>. Here, eliminated players have the chance to fight for a second opportunity. Those who answer a set number of questions correctly during this phase can avoid elimination once and return to the game."
         links:
             youtube:
                 label: "YouTube Video"
-    
 
 footer: 
     copyright: "Copyright © {year}"

@@ -9,19 +9,19 @@
             <div class="mt-5 text-center">
                 <h1
                     class="h2"
-                    v-html="$t('error.base')"
+                    v-html="useI18n().t('error.base')"
                 />
-                <h4 v-html="$t(`error.${error.statusCode}`)" />
+                <h4 v-html="useI18n().t(`error.${error.statusCode}`)" />
                 <p
                     class="fw-bold"
                     v-html="error.message"
                 />
                 <p
                     class="mt-3"
-                    v-html="$t('error.hint')"
+                    v-html="useI18n().t('error.hint')"
                 />
                 <UButton
-                    :label="$t('error.back2home')"
+                    :label="useI18n().t('error.back2home')"
                     class="mt-5"
                     @click="handleError"
                 />

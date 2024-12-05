@@ -1,7 +1,7 @@
 <template>
     <ULandingSection
-        :title="$t('homepage.landing.projects.title')"
-        :headline="limit === 0 ? '' : $t('homepage.landing.projects.headline')"
+        :title="useI18n().t('homepage.landing.projects.title')"
+        :headline="limit === 0 ? '' : useI18n().t('homepage.landing.projects.headline')"
     >
         <UPageGrid>
             <UPageCard
@@ -34,7 +34,7 @@
                 :to="Routes.Projects"
                 class="mt-8 w-28"
                 size="lg"
-                :label="$t('homepage.landing.projects.btn.label')"
+                :label="useI18n().t('homepage.landing.projects.btn.label')"
             />
         </div>
     </ULandingSection>
@@ -52,6 +52,7 @@ export default {
   data() {
     return {
       Routes,
+      translate: useI18n(),
     };
   },
   computed: {
@@ -85,8 +86,8 @@ export default {
 
       return keys.map((key) => ({
         projectKey: key,
-        title: this.$t(`projects.${key}.title`),
-        description: this.$t(`projects.${key}.description`),
+        title: this.translate.t(`projects.${key}.title`),
+        description: this.translate.t(`projects.${key}.description`),
         projectData: projectsData[key],
         // @ts-expect-error
         to: ProjectRoutes[key.charAt(0).toUpperCase() + key.slice(1)],

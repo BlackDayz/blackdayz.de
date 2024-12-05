@@ -11,7 +11,7 @@
                 alt="Meine Projekte"
                 width="32"
             />
-            <span v-text="$t('projects.link.button')" />
+            <span v-text="useI18n().t('projects.link.button')" />
         </UButton>
     </div>
 </template>

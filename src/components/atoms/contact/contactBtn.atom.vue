@@ -11,7 +11,7 @@
                 alt="Contact me"
                 width="32"
             />
-            <span v-text="$t('contact.button')" />
+            <span v-text="useI18n().t('contact.button')" />
         </UButton>
     </div>
 </template>
