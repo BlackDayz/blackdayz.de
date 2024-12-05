@@ -1,7 +1,7 @@
 <template>
     <div>
         <ULandingLogos
-            :title="$t('homepage.landing.trustedBy.title')"
+            :title="useI18n().t('homepage.landing.trustedBy.title')"
             align="center"
             :ui="{
                 title: 'text-3xl font-bold',
@@ -11,16 +11,16 @@
             <NuxtLink
                 v-for="client in clients"
                 :key="client"
-                :to="$t(`clients.${client}.url`)"
+                :to="useI18n().t(`clients.${client}.url`)"
                 class="w-32 h-40 grid gap-3 mx-5"
             >
                 <NuxtImg
-                    :src="$t(`clients.${client}.img`)"
+                    :src="useI18n().t(`clients.${client}.img`)"
                     class="w-32 h-32 object-fill rounded-lg"
                 />
                 <p
                     class="font-bold text-xl"
-                    v-text="$t(`clients.${client}.name`)"
+                    v-text="useI18n().t(`clients.${client}.name`)"
                 />
             </NuxtLink>
         </ULandingLogos>

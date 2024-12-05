@@ -1,8 +1,8 @@
 <template>
     <ULandingSection
-        :title="$t('homepage.landing.whatDoIDo.title')"
-        :description="$t('homepage.landing.whatDoIDo.description')"
-        :headline="$t('homepage.landing.whatDoIDo.headline')"
+        :title="useI18n().t('homepage.landing.whatDoIDo.title')"
+        :description="useI18n().t('homepage.landing.whatDoIDo.description')"
+        :headline="useI18n().t('homepage.landing.whatDoIDo.headline')"
     >
         <UPageGrid
             id="features"
@@ -29,6 +29,11 @@ interface ItemsInterface {
 
 export default {
   name: 'LandingpageWhatDoIDoComponent',
+  data() {
+    return {
+      translate: useI18n()
+    };
+  },
   computed: {
     items(): ItemsInterface[] {
       const keys = [
@@ -39,9 +44,9 @@ export default {
       ];
 
       return keys.map((key) => ({
-        title: this.$t(`homepage.landing.whatDoIDo.items.${key}.title`),
-        description: this.$t(`homepage.landing.whatDoIDo.items.${key}.description`),
-        icon: this.$t(`homepage.landing.whatDoIDo.items.${key}.icon`),
+        title: this.translate.t(`homepage.landing.whatDoIDo.items.${key}.title`),
+        description: this.translate.t(`homepage.landing.whatDoIDo.items.${key}.description`),
+        icon: this.translate.t(`homepage.landing.whatDoIDo.items.${key}.icon`),
       }));
     }
   },

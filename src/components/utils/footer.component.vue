@@ -2,7 +2,7 @@
     <UFooter :links="links">
         <template #left>
             <span
-                v-text="$t('footer.copyright', {
+                v-text="useI18n().t('footer.copyright', {
                     year: new Date().getFullYear(),
                 })"
             />
@@ -15,7 +15,7 @@
                 class="cursor-pointer"
                 @click.prevent.stop="updateLocale(locale.code)"
             >
-                {{ $t('footer.langSwitcher.text', { lang: locale.name }) }}
+                {{ useI18n().t('footer.langSwitcher.text', { lang: locale.name }) }}
             </NuxtLink>
             <UColorModeButton />
             <UButton
@@ -45,6 +45,7 @@ export default {
           privacy: Routes.PrivacyEN,
         },
       } as Record<'de-DE' | 'en-US', { imprint: Routes; privacy: Routes }>,
+      translate: useI18n(),
     };
   },
   computed: {
@@ -60,19 +61,19 @@ export default {
       const locale = (useI18n().getLocaleCookie() || 'de-DE') as 'de-DE' | 'en-US';
       this.links = [
         {
-          label: this.$t('footer.links.imprint.label'),
-          icon: this.$t('footer.links.imprint.icon'),
+          label: this.translate.t('footer.links.imprint.label'),
+          icon: this.translate.t('footer.links.imprint.icon'),
           to: this.legalLinks[locale].imprint,
         },
         {
-          label: this.$t('footer.links.privacy.label'),
-          icon: this.$t('footer.links.privacy.icon'),
+          label: this.translate.t('footer.links.privacy.label'),
+          icon: this.translate.t('footer.links.privacy.icon'),
           to: this.legalLinks[locale].privacy,
         },
       ];
     },
-    updateLocale(locale: string) {
-      this.$i18n.setLocale(locale);
+    updateLocale(locale: 'de-DE' | 'en-US') {
+      this.translate.setLocale(locale);
       useRouter().go(0);
     },
   }

@@ -1,6 +1,6 @@
 <template>
     <UAlert
-        :description="$t('legal.hint.description')"
+        :description="useI18n().t('legal.hint.description')"
         color="red"
         variant="outline"
     />

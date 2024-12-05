@@ -7,13 +7,13 @@
                 variant="outline"
                 color="cyan"
                 icon="i-heroicons-arrow-left"
-                :label="$t('projects.detail.backbtn.label')"
+                :label="useI18n().t('projects.detail.backbtn.label')"
             />
         </div>
         <ULandingSection
             v-if="projectData"
-            :title="$t(`projects.${projectName}.title`)"
-            :description="$t(`projects.${projectName}.description`)"
+            :title="useI18n().t(`projects.${projectName}.title`)"
+            :description="useI18n().t(`projects.${projectName}.description`)"
         >
             <div class="grid justify-center">
                 <ProjectTechComponent :project-tech="projectData.tech" />
@@ -21,7 +21,7 @@
             
             <NuxtImg
                 :src="`/img/projects/${projectData.img}`"
-                :alt="$t(`projects.${projectName}.title`)"
+                :alt="useI18n().t(`projects.${projectName}.title`)"
                 class="w-screen"
             />
             
@@ -30,7 +30,7 @@
                     v-for="(img, index) in projectData.moreImg"
                     :key="index"
                     :src="`/img/projects/${img}`"
-                    :alt="$t(`projects.${projectName}.title`)"
+                    :alt="useI18n().t(`projects.${projectName}.title`)"
                     class="w-screen"
                 />
             </div>
@@ -61,7 +61,7 @@
                             name="i-mdi-web"
                             class="mr-2"
                         />
-                        <span v-text="$t(`projects.${projectName}.links.${link.key}.label`)" />
+                        <span v-text="useI18n().t(`projects.${projectName}.links.${link.key}.label`)" />
                         <UIcon
                             name="i-ic-outline-launch"
                             class="ml-2"
@@ -80,6 +80,7 @@ export default {
     return {
       projectName: useRoute().params.projectName[0],
       ProjectLinkTypes,
+      translate: useI18n(),
     };
   },
   computed: {
@@ -93,12 +94,12 @@ export default {
   methods: {
     updateMeta() {
       useHead({
-        title: `${this.$t(`projects.${this.projectName}.title`)} | ${this.$t('general.company')}`,
+        title: `${this.translate.t(`projects.${this.projectName}.title`)} | ${this.translate.t('general.company')}`,
         meta: [
           {
             hid: 'description',
             name: 'description',
-            content: this.$t(`projects.${this.projectName}.description`),
+            content: this.translate.t(`projects.${this.projectName}.description`),
           },
         ],
       });

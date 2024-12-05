@@ -2,8 +2,8 @@
     <div>
         <ULandingSection>
             <ULandingHero
-                :title="$t('general.company')"
-                :description="$t('homepage.landing.top.description')"
+                :title="useI18n().t('general.company')"
+                :description="useI18n().t('homepage.landing.top.description')"
             >
                 <LandingpageTopComponent />
                 <div class="mt-64">
@@ -20,14 +20,19 @@
 <script lang="ts">
 export default {
     name: 'IndexPage',
+    data() {
+        return {
+            translate: useI18n(),
+        };
+    },
     mounted() {
         useHead({
-            title: `${this.$t('general.company')} ${this.$t('homepage.meta.title')}`,
+            title: `${this.translate.t('general.company')} ${this.translate.t('homepage.meta.title')}`,
             meta: [
                 {
                     hid: 'description',
                     name: 'description',
-                    content: this.$t('homepage.meta.description'),
+                    content: this.translate.t('homepage.meta.description'),
                 },
             ],
         });

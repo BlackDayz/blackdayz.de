@@ -17,11 +17,11 @@ export default {
     return {
         links: [
             {
-                label: this.$t('header.links.projects'),
+                label: useI18n().t('header.links.projects'),
                 to: Routes.Projects
             },
             {
-                label: this.$t('header.links.contact'),
+                label: useI18n().t('header.links.contact'),
                 to: Routes.Contact
             }
         ]
