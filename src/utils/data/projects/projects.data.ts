@@ -328,5 +328,17 @@ export const projectsData: ProjectDataObjectInterface = {
             }
         ],
         moreImg: []
+    },
+    mostscuffedep7: {
+        img: '/rumathra/mostscuffedep7.jpg',
+        tech: [ProjectTech.Vue, ProjectTech.Nuxt, ProjectTech.Typescript],
+        links: [
+            {
+                key: 'youtube',
+                type: ProjectLinkTypes.Youtube,
+                url: 'https://youtu.be/0JrxZfhWH8E?si=Z443htAU_gV4h2H2'
+            }
+        ],
+        moreImg: []
     }
 };

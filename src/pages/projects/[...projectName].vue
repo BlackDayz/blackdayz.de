@@ -12,9 +12,13 @@
         </div>
         <ULandingSection
             v-if="projectData"
-            :title="useI18n().t(`projects.${projectName}.title`)"
-            :description="useI18n().t(`projects.${projectName}.description`)"
         >
+            <template #title>
+                <span v-html="useI18n().t(`projects.${projectName}.title`)" />
+            </template>
+            <template #description>
+                <span v-html="useI18n().t(`projects.${projectName}.description`)" />
+            </template>
             <div class="grid justify-center">
                 <ProjectTechComponent :project-tech="projectData.tech" />
             </div>
