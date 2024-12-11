@@ -19,7 +19,10 @@
                     />
                 </template>
                 <template #description>
-                    <span class="line-clamp-2">{{ module.description }}</span>
+                    <span
+                        class="line-clamp-2"
+                        v-html="module.description"
+                    />
                     <div class="mt-3">
                         <ProjectTechComponent :project-tech="module.projectData.tech" />
                     </div>
