@@ -22,7 +22,7 @@
     "@iconify-json/mingcute": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.15",
     "@nuxt/devtools": "latest",
-    "@nuxt/fonts": "^0.10.0",
+    "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.8.1",
     "@nuxt/typescript-build": "^3.0.2",
     "@nuxtjs/i18n": "^9.1.0",
