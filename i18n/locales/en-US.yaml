@@ -249,6 +249,10 @@ projects:
             youtube:
                 label: "YouTube Video"
 
+    notionclockify:
+        title: "Notion to Clockify Middleware"
+        description: "I manage my time tracking with Clockify and use the task IDs from Notion. Since the manual creation of tasks in Clockify became tedious in the long run and Notion recently introduced the new feature “Webhooks”, I developed a middleware. This middleware automatically creates the corresponding tasks in Clockify as soon as certain changes are made in Notion."
+
 footer: 
     copyright: "Copyright © {year}"
     langSwitcher:

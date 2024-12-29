@@ -243,6 +243,10 @@ projects:
         links:
             youtube:
                 label: "YouTube Video"
+
+    notionclockify:
+        title: "Notion zu Clockify Middleware"
+        description: "Ich verwalte meine Zeiterfassung mit Clockify und nutze dabei die Task-IDs aus Notion. Da das manuelle Anlegen von Aufgaben in Clockify auf Dauer mühsam wurde und Notion kürzlich das neue Feature „Webhooks“ eingeführt hat, habe ich eine Middleware entwickelt. Diese Middleware erstellt automatisch die entsprechenden Aufgaben in Clockify, sobald bestimmte Änderungen in Notion vorgenommen werden."
     
 
 footer: 
