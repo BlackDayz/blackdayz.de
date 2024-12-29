@@ -27,7 +27,7 @@
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.8.1",
     "@nuxt/typescript-build": "^3.0.2",
-    "@nuxtjs/i18n": "^9.1.1",
+    "@nuxtjs/i18n": "^9.1.0",
     "husky": "^9.1.7",
     "nuxt": "^3.14.1592",
     "postcss": "^8.4.40",
