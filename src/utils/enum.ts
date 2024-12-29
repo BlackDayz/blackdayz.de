@@ -35,6 +35,7 @@ export enum ProjectRoutes {
     Phenixgamesgtaroleplay = '/projects/phenixgamesgtaroleplay',
     Mostscuffedep6 = '/projects/mostscuffedep6',
     Mostscuffedep7 = '/projects/mostscuffedep7',
+    Notionclockify = '/projects/notionclockify',
 }
 
 export enum ProjectLinkTypes {

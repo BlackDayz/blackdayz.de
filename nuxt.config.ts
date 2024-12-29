@@ -15,9 +15,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'dark',
   },
-  css: [
-    '~/assets/scss/base.scss',
-  ],
+  css: [],
   app: {
     head: {
       charset: 'utf-8',

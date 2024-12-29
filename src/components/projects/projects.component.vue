@@ -67,6 +67,7 @@ export default {
         'mostscuffed',
         'mostscuffedv2',
         'rumathrabingo', 
+        'notionclockify',
         'mittelbot',
         'derduemmstefliegt',
         'studiodevoyage',
@@ -93,7 +94,7 @@ export default {
         description: this.translate.t(`projects.${key}.description`),
         projectData: projectsData[key],
         // @ts-expect-error
-        to: ProjectRoutes[key.charAt(0).toUpperCase() + key.slice(1)],
+        to: ProjectRoutes[key.charAt(0).toUpperCase() + key.slice(1)]
       }));
     }
   },

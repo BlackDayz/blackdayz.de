@@ -340,5 +340,13 @@ export const projectsData: ProjectDataObjectInterface = {
             }
         ],
         moreImg: []
+    },
+    notionclockify: {
+        img: '/notionclockify/notionclockify.png',
+        tech: [ProjectTech.Node],
+        links: [],
+        moreImg: [
+            '/notionclockify/notionclockify_ap.png',
+        ]
     }
 };
