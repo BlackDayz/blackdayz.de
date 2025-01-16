@@ -250,7 +250,7 @@ projects:
     
 
 footer: 
-    copyright: "Copyright © {year}"
+    copyright: "Copyright © 2024 - {year}"
     langSwitcher:
         text: "Sprache zu {lang} wechseln"
     links:
