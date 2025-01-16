@@ -10,6 +10,7 @@ export default defineNuxtConfig({
       appwriteConfig: {
         databaseId: process.env.APPWRITE_DATABASE_ID,
       },
+      storyblokVersion: process.env.STORYBLOK_VERSION || 'published',
     }
   },
   colorMode: {
@@ -25,18 +26,27 @@ export default defineNuxtConfig({
   extends: [
     '@nuxt/ui-pro'
   ],
-  modules: ['@nuxtjs/i18n', '@nuxt/ui',
-  '@nuxt/image', '@nuxt/fonts', '@sentry/nuxt/module'],
+  modules: [
+    '@nuxtjs/i18n',
+    '@nuxt/ui',
+    '@nuxt/image',
+    '@nuxt/fonts',
+    '@sentry/nuxt/module',
+    '@storyblok/nuxt',
+  ],
   plugins: [
     '~/plugins/sentry.ts',
   ],
   extensions: ['ts', 'js'],
-  components: [
-    {
-      path: '~/components',
-      pathPrefix: false,
-    },
-  ],
+  components: {
+    dirs: [
+      {
+        path: '~/components',
+        pathPrefix: false,
+      },
+    ],
+    global: true,
+  },
   i18n: {
     lazy: true,
     langDir: 'locales/',
@@ -90,5 +100,12 @@ export default defineNuxtConfig({
       'composables/**',
       'utils/**',
     ]
+  },
+  storyblok: {
+    accessToken: process.env.STORYBLOK_ACCESS_TOKEN,
+    devtools: true,
+    apiOptions: {
+      region: 'eu',
+    }
   },
 })
