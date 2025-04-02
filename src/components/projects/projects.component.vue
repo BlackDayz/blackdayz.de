@@ -16,6 +16,7 @@
                     <NuxtImg
                         :src="`/img/projects/${module.projectData.img}`"
                         class="h-48 w-full object-cover"
+                        loading="lazy"
                     />
                 </template>
                 <template #description>

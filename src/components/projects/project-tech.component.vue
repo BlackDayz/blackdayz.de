@@ -10,6 +10,7 @@
             :src="projectTechImg[tech]"
             :title="tech"
             class="me-2 w-8 h-8 object-contain"
+            loading="lazy"
         />
     </div>
 </template>

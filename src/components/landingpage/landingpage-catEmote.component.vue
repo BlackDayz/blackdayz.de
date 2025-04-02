@@ -3,6 +3,7 @@
         <NuxtImg
             :src="use7tv().getEmoteUrl('636f1f13cd0b9515ad700087')"
             class="w-80"
+            loading="lazy"
         />
     </ULandingSection>
 </template>
