@@ -14,7 +14,7 @@
             >
                 <template #icon>
                     <NuxtImg
-                        :src="`@/assets/img/projects${module.projectData.img}`"
+                        :src="`/img/projects${module.projectData.img}`"
                         class="h-48 w-full object-cover"
                         loading="lazy"
                     />

@@ -91,7 +91,4 @@ export default defineNuxtConfig({
       'utils/**',
     ]
   },
-  image: {
-    provider: 'none',
-  }
 })

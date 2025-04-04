@@ -15,7 +15,7 @@
                 class="w-32 h-40 grid gap-3 mx-5"
             >
                 <NuxtImg
-                    :src="'@/assets'+useI18n().t(`clients.${client}.img`)"
+                    :src="useI18n().t(`clients.${client}.img`)"
                     class="w-32 h-32 object-fill rounded-lg"
                 />
                 <p
