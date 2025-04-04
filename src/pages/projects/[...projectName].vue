@@ -24,7 +24,7 @@
             </div>
             
             <NuxtImg
-                :src="`@/assets/img/projects/${projectData.img}`"
+                :src="`/img/projects${projectData.img}`"
                 :alt="useI18n().t(`projects.${projectName}.title`)"
                 class="w-screen"
             />
