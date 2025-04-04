@@ -33,7 +33,7 @@
                 <NuxtImg
                     v-for="(img, index) in projectData.moreImg"
                     :key="index"
-                    :src="`/img/projects/${img}`"
+                    :src="`/img/projects${img}`"
                     :alt="useI18n().t(`projects.${projectName}.title`)"
                     class="w-screen"
                 />
