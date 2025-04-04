@@ -36,6 +36,7 @@ export enum ProjectRoutes {
     Mostscuffedep6 = '/projects/mostscuffedep6',
     Mostscuffedep7 = '/projects/mostscuffedep7',
     Notionclockify = '/projects/notionclockify',
+    Dokomi = '/projects/dokomi',
 }
 
 export enum ProjectLinkTypes {

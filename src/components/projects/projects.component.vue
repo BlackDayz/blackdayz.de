@@ -69,6 +69,7 @@ export default {
         'mostscuffedv2',
         'rumathrabingo', 
         'notionclockify',
+        'dokomi',
         'mittelbot',
         'derduemmstefliegt',
         'studiodevoyage',

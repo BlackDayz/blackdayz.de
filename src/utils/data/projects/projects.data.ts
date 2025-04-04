@@ -348,5 +348,19 @@ export const projectsData: ProjectDataObjectInterface = {
         moreImg: [
             '/notionclockify/notionclockify_ap.png',
         ]
+    },
+    dokomi: {
+        img: '/dokomi/dokomi.png',
+        tech: [ProjectTech.Supabase, ProjectTech.Nuxt, ProjectTech.Typescript],
+        links: [
+            {
+                key: 'youtube',
+                type: ProjectLinkTypes.Youtube,
+                url: "https://youtu.be/cOnDfo-bfpI"
+            }
+        ],
+        moreImg: [
+            '/dokomi/dokomi_admin.png',
+        ]
     }
 };

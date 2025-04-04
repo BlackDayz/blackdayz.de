@@ -253,6 +253,10 @@ projects:
         title: "Notion to Clockify Middleware"
         description: "I manage my time tracking with Clockify and use the task IDs from Notion. Since the manual creation of tasks in Clockify became tedious in the long run and Notion recently introduced the new feature “Webhooks”, I developed a middleware. This middleware automatically creates the corresponding tasks in Clockify as soon as certain changes are made in Notion."
 
+    dokomi:
+        title: "DoKomi Bingo"
+        description: "Im Rahmen der DoKomi 2024, an der Rumathra einen Tag lang teilnahm, wurde ein kleines Bingo-Overlay entwickelt, das Ereignisse anzeigt, die möglicherweise eintreten könnten. Ziel war es, alle diese Ereignisse zu erreichen. Im Hintergrund sitzt ein Twitch Moderator und hackt die einzelnen Events über ein Admininterface."
+
 footer: 
     copyright: "Copyright © {year}"
     langSwitcher:
