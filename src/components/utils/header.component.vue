@@ -2,7 +2,7 @@
     <UHeader :links="links">
         <template #logo>
             <NuxtImg
-                src="/img/logo/BlackDayzLogo.png"
+                src="@/assets/img/logo/BlackDayzLogo.png"
                 alt="BlackDayz Logo"
                 width="200"
             />
