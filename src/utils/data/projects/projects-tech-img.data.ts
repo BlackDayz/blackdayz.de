@@ -15,4 +15,5 @@ export const projectTechImg = {
     [ProjectTech.Supabase]: 'https://img.icons8.com/fluency/48/supabase.png',
     [ProjectTech.Websocket]: 'https://img.icons8.com/color/48/azure-relay-hybrid-connection.png',
     [ProjectTech.Appwrite]: '/img/tech/appwrite.png',
+    [ProjectTech.Tailwind]: 'https://img.icons8.com/color/48/tailwindcss.png',
 } as const;

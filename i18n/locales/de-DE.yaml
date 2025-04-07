@@ -251,6 +251,10 @@ projects:
     dokomi:
         title: "DoKomi Bingo"
         description: "Im Rahmen der DoKomi 2024, an der Rumathra einen Tag lang teilnahm, wurde ein kleines Bingo-Overlay entwickelt, das Ereignisse anzeigt, die möglicherweise eintreten könnten. Ziel war es, alle diese Ereignisse zu erreichen. Im Hintergrund sitzt ein Twitch Moderator und hackt die einzelnen Events über ein Admininterface."
+
+    newwebsite:
+        title: "Neue Webseite"
+        description: "Anfang des Jahres habe ich einen neuen Weg ausgearbeitet, wohin ich mit meiner freiberuflichen Tätigkeit gehen möchte. Dabei hat sich herauskristallisiert, dass ich mehr in die Gameshow Richtung gehen möchte. Dafür habe ich zuerst mein CI & CD überarbeitet und danach auch ein neues Design für meine Webseite entwickelt. Die Webseite ist aus zeitlichen Gründen noch nicht fertig."
     
 
 footer: 

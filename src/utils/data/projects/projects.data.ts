@@ -362,5 +362,14 @@ export const projectsData: ProjectDataObjectInterface = {
         moreImg: [
             '/dokomi/dokomi_admin.png',
         ]
-    }
+    },
+    newwebsite: {
+        img: '/newwebsite/newWebsiteDesignIdeas.png',
+        tech: [ProjectTech.Nuxt, ProjectTech.Typescript, ProjectTech.Tailwind],
+        links: [],
+        moreImg: [
+            '/newwebsite/newWebsiteDesign.png',
+            '/newwebsite/newWebsiteCD.png',
+        ]
+    },
 };

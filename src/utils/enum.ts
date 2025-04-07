@@ -62,4 +62,5 @@ export enum ProjectTech {
     Supabase = 'supabase',
     Websocket = 'websocket',
     Appwrite = 'appwrite',
+    Tailwind = 'tailwind',
 }
