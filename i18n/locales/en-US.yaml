@@ -256,6 +256,9 @@ projects:
     dokomi:
         title: "DoKomi Bingo"
         description: "As part of DoKomi 2024, which Rumathra attended for a day, a small bingo overlay was developed that displays events that could potentially occur. The aim was to reach all of these events. A Twitch moderator sits in the background and hacks the individual events via an admin interface."
+        links:
+            youtube:
+                label: "YouTube Video"
 
     newwebsite:
         title: "New Website"
