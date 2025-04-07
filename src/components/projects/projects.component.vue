@@ -67,6 +67,7 @@ export default {
         'mittlay',
         'mostscuffed',
         'mostscuffedv2',
+        'newwebsite',
         'rumathrabingo', 
         'notionclockify',
         'dokomi',
