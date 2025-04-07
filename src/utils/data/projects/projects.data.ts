@@ -30,7 +30,7 @@ export const projectsData: ProjectDataObjectInterface = {
         tech: [ProjectTech.Nuxt, ProjectTech.Typescript, ProjectTech.Appwrite],
         moreImg: [
             '/mittlay/settings_preview.png',
-            '/mittlay/bingo_preview.png'
+            '/mittlay/mittlay_editor.jpeg'
         ],
         links: []
     },
