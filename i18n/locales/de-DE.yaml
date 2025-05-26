@@ -310,3 +310,13 @@ clients:
         description: "Twitch Streamer"
         url: "https://twitch.tv/geilevideossos"
         img: "/img/clients/geilevideossos.png"
+    trymacs:
+        name: "Trymacs"
+        description: "Twitch Streamer"
+        url: "https://twitch.tv/trymacs"
+        img: "/img/clients/trymacs.jpg"
+    chefstrobel:
+        name: "Chefstrobel"
+        description: "Twitch Streamer"
+        url: "https://twitch.tv/chefstrobel"
+        img: "/img/clients/chefstrobel.jpg"

@@ -35,7 +35,9 @@ export default {
       clients: [
         'rumathra',
         'hautnah',
-        'geilevideossos'
+        'geilevideossos',
+        'trymacs',
+        'chefstrobel'
       ]
     };
   }
