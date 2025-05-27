@@ -16,7 +16,7 @@
             >
                 <NuxtImg
                     :src="useI18n().t(`clients.${client}.img`)"
-                    class="w-32 h-32 object-fill rounded-lg"
+                    class="w-32 h-32 object-cover rounded-lg"
                 />
                 <p
                     class="font-bold text-xl"
